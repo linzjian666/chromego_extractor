@@ -29,9 +29,10 @@ jobs:
             - name: Commit & Push changes
               env:
                   GITHUB_TOKEN: ${{ github.token }}
-              run: |
-                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git config --local user.name "github-actions[bot]"
-                  git add -A
-                  git commit --allow-empty -m "Auto extract at $(date '+%Y-%m-%d %H:%M:%S')"
-                  git push
+              uses: stefanzweifel/git-auto-commit-action@v4.16.0
+              with:
+                    commit_message: Auto extract by Github Actions at $(date '+%Y-%m-%d %H:%M:%S')
+                    create_branch: true
+                    branch: main
+                    commit_options: '--allow-empty'
+                    push_options: '--force'
