@@ -85,11 +85,11 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: 🇨🇳 TW-hysteria | 4-1
+- name: ip
+  server: 108.181.2.154
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  port: 33445
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
@@ -107,30 +107,28 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: ip
+- name: 🇺🇸 US-hysteria | 6-1
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  server: 64.110.25.10
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: 🇺🇸 US-tuic | 7-1
+- name: ip1
+  type: hysteria
   server: 64.110.25.10
-  port: 33445
-  type: tuic
-  uuid: 670998c6-a78f-43cc-86aa-29292476e040
-  password: dongtaiwang.com
-  sni: bing.com
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: 🇺🇸 US-hysteria | 8-1
   type: hysteria
   server: 62.204.54.81
@@ -211,10 +209,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇨🇳 TW-Hysteria2 | 0-0
+- name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
-  server: www.dtku46.xyz
-  port: 55307
+  server: 167.160.90.252
+  port: 63530
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -223,14 +221,6 @@ proxies:
   type: hysteria2
   server: 108.181.22.155
   port: 31721
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 US-Hysteria2 | 2-0
-  type: hysteria2
-  server: 167.160.90.252
-  port: 63530
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -247,19 +237,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -271,19 +260,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -295,19 +283,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -319,19 +306,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -343,19 +329,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -367,19 +352,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -391,19 +375,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -415,19 +398,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -439,19 +421,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -463,19 +444,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -487,19 +467,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -511,19 +490,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -535,19 +513,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -559,19 +536,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -592,19 +568,18 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇺🇸 US-hysteria | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria | 5-1
   - ip
-  - 🇺🇸 US-tuic | 7-1
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 6-1
+  - ip1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
-  - 🇨🇳 TW-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇺🇸 US-Hysteria2 | 2-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
