@@ -31,6 +31,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: ♻️ 自动选择
     type: url-test
@@ -58,60 +59,70 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - ☁ WARP
 
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - ☁ WARP
 
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - ☁ WARP
 
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - ☁ WARP
 
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: 🤖 OpenAI
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
   - name: 🎯 全球直连
     type: select
@@ -127,6 +138,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - ☁ WARP
 
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
