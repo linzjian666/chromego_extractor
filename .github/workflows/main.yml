@@ -26,10 +26,12 @@ jobs:
             - name: Run extract script
               run: python main.py
 
+            - name: Set Date env
+              run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+              
             - name: Commit & Push changes
               env:
                   GITHUB_TOKEN: ${{ github.token }}
-                  DATE: $(date '+%Y-%m-%d %H:%M:%S')
               uses: stefanzweifel/git-auto-commit-action@v4.16.0
               with:
                     commit_message: Auto extract by Github Actions at ${{ env.DATE }}
