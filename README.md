@@ -24,5 +24,5 @@ A python script to extract ChromeGo Proxies.
 
 本项目采用 MIT 许可证。有关详细信息，请参阅 [LICENSE](LICENSE) 文件。
 
----
-欢迎提出问题或为本项目的开发做出贡献！
+
+**欢迎提出问题或为本项目的开发做出贡献！**
