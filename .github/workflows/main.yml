@@ -33,5 +33,5 @@ jobs:
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
                   git add -A
-                  git commit -m "Auto extract at $(date '+%Y-%m-%d %H:%M:%S')"
+                  git commit --allow-empty -m "Auto extract at $(date '+%Y-%m-%d %H:%M:%S')"
                   git push
