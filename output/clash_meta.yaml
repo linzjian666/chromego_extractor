@@ -15,16 +15,29 @@ proxies:
   type: vless
   server: dongtaiwang3.com
   port: 443
-  uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
   tls: true
-  servername: dongtaiwang.freeh1.xyz
+  servername: dongtaiwang.dtku47.xyz
   network: ws
   ws-opts:
-    path: /pxzaws
+    path: /eobjws
     headers:
-      host: dongtaiwang.freeh1.xyz
+      host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: 🇨🇦 CA-vmess | 1-1
+- name: 🇨🇦 CA-vless | 0-2
+  type: vless
+  server: dongtaiwang2.com
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
+- name: ip
   type: vmess
   server: dongtaiwang2.com
   port: 443
@@ -52,6 +65,34 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
+- name: ip1
+  type: vless
+  server: dongtaiwang3.com
+  port: 443
+  uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
+  tls: true
+  servername: dongtaiwang.freeh1.xyz
+  network: ws
+  ws-opts:
+    path: /pxzaws
+    headers:
+      host: dongtaiwang.freeh1.xyz
+  client-fingerprint: chrome
+- name: ip
+  type: vmess
+  server: dongtaiwang2.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: ip
   type: vmess
   server: dongtaiwang3.com
@@ -69,7 +110,7 @@ proxies:
       host: xray1.freeh1.xyz
 - name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
-  server: 111.243.97.209
+  server: www2.dtku48.xyz
   port: 22334
   auth-str: dongtaiwang.com
   alpn:
@@ -184,7 +225,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -203,7 +247,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -221,7 +268,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -239,7 +289,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -257,7 +310,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -275,7 +331,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -293,7 +352,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -311,7 +373,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -329,7 +394,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -347,7 +415,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -365,7 +436,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -383,7 +457,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
@@ -410,7 +487,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vmess | 1-1
+  - 🇨🇦 CA-vless | 0-2
+  - ip
+  - ip
+  - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
