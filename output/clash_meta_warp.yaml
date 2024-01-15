@@ -30,17 +30,21 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇺🇸 US-hysteria | 0-1
-  type: hysteria
-  server: 167.160.90.252
-  port: 48089
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: 🇨🇦 CA-vmess | 0-1
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: 🇨🇦 CA-vmess | 1-1
   type: vmess
   server: dongtaiwang2.com
@@ -69,16 +73,24 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
-- name: 🇺🇸 US-hysteria2 | 3-1
-  type: hysteria2
-  server: 108.181.2.155
-  port: 22223
-  password: dongtaiwang.com
-  sni: bing.com
+- name: ip
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: 🇨🇳 TW-hysteria | 4-1
   type: hysteria
-  server: www4.dtku49.xyz
+  server: 111.243.97.209
   port: 22334
   auth-str: dongtaiwang.com
   alpn:
@@ -87,14 +99,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: 🇺🇸 US-hysteria2 | 5-1
-  type: hysteria2
-  server: 108.181.5.19
-  port: 44446
-  password: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-- name: ip
+- name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
   server: www4.dtku49.xyz
   port: 22334
@@ -219,13 +224,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -241,13 +245,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -263,13 +266,12 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -285,13 +287,12 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -307,13 +308,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -329,13 +329,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -351,13 +350,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -373,13 +371,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -395,13 +392,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -417,13 +413,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -439,13 +434,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -461,13 +455,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -483,13 +476,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -505,13 +497,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
@@ -536,13 +527,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-hysteria | 0-1
+  - 🇨🇦 CA-vmess | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
-  - 🇺🇸 US-hysteria2 | 3-1
-  - 🇨🇳 TW-hysteria | 4-1
-  - 🇺🇸 US-hysteria2 | 5-1
   - ip
+  - 🇨🇳 TW-hysteria | 4-1
+  - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
   - 🇨🇳 TW-hysteria | 9-1
