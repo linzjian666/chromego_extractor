@@ -11,21 +11,19 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇨🇦 CA-vmess | 0-1
-  type: vmess
+- name: 🇨🇦 CA-vless | 0-1
+  type: vless
   server: dongtaiwang3.com
   port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
+  uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
   tls: true
-  skip-cert-verify: true
-  servername: ''
+  servername: dongtaiwang.freeh1.xyz
   network: ws
   ws-opts:
-    path: /gzogws
+    path: /pxzaws
     headers:
-      host: xray1.freeh1.xyz
+      host: dongtaiwang.freeh1.xyz
+  client-fingerprint: chrome
 - name: 🇨🇦 CA-vmess | 1-1
   type: vmess
   server: dongtaiwang2.com
@@ -69,20 +67,9 @@ proxies:
     path: /gzogws
     headers:
       host: xray1.freeh1.xyz
-- name: 🇨🇳 TW-hysteria | 4-1
-  type: hysteria
-  server: 111.243.97.209
-  port: 22334
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
 - name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
-  server: www4.dtku49.xyz
+  server: 111.243.97.209
   port: 22334
   auth-str: dongtaiwang.com
   alpn:
@@ -184,14 +171,6 @@ proxies:
   - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
-  server: 167.160.90.252
-  port: 63530
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 US-Hysteria2 | 1-0
-  type: hysteria2
   server: 64.110.25.11
   port: 33337
   password: dongtaiwang.com
@@ -204,11 +183,10 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -218,18 +196,16 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -239,17 +215,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -259,17 +233,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -279,17 +251,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -299,17 +269,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -319,17 +287,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -339,17 +305,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -359,17 +323,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -379,17 +341,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -399,17 +359,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -419,17 +377,15 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -439,7 +395,6 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -454,11 +409,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vmess | 1-1
   - ip
   - ip
-  - 🇨🇳 TW-hysteria | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
@@ -468,7 +422,6 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇫🇷 FR-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
