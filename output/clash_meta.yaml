@@ -145,7 +145,7 @@ proxies:
 - name: 🇨🇳 TW-hysteria | 9-1
   type: hysteria
   server: www.dtku50.xyz
-  port: 56252
+  port: 32408
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
