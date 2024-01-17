@@ -133,7 +133,7 @@ proxies:
 - name: 🇺🇸 US-hysteria | 8-1
   type: hysteria
   server: 62.204.54.81
-  port: 44550
+  port: 62946
   sni: bing.com
   skip-cert-verify: true
   alpn:
