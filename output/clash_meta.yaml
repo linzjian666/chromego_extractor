@@ -37,21 +37,26 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: ip
-  type: vmess
-  server: dongtaiwang2.com
-  port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
+- name: 🇺🇸 US-ss | 1-1
+  type: ss
+  server: 167.160.90.252
+  port: 8883
+  cipher: 2022-blake3-aes-128-gcm
+  password: lolvK9uAhEDYTMuqCRblBg==
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: addons.mozilla.org
+    password: d3971b31-e16b-4af2-b430-afb896380543
+    version: 3
+  smux:
+    enabled: true
+    protocol: h2mux
+    padding: true
+    max-connections: '8'
+    min-streams: '16'
+    statistic: true
+    only-tcp: false
 - name: ip
   type: vless
   server: dongtaiwang2.com
@@ -129,18 +134,16 @@ proxies:
   obfs: salamander
   obfs-password: d64df453-34f0-4fa8-b115-e6805f6d54db
   skip-cert-verify: true
-- name: 🇺🇸 US-hysteria | 8-1
-  type: hysteria
-  server: 62.204.54.81
-  port: 62946
-  sni: bing.com
+- name: 🇺🇸 US-hysteria2 | 8-1
+  type: hysteria2
+  server: 45.150.165.84
+  port: 33440
+  password: d017e316-82cb-441c-8eea-7b5e9de64a20
+  obfs: salamander
+  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 5
-  down: 10
+  up: 2 Mbps
+  down: 10 Mbps
 - name: 🇨🇳 TW-hysteria | 9-1
   type: hysteria
   server: www.dtku50.xyz
@@ -225,14 +228,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -247,14 +250,14 @@ proxy-groups:
   proxies:
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -268,14 +271,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -289,14 +292,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -310,14 +313,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -331,14 +334,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -352,14 +355,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -373,14 +376,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -394,14 +397,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -415,14 +418,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -436,14 +439,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -457,14 +460,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -487,14 +490,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
   - 🇨🇦 CA-vless | 0-2
-  - ip
+  - 🇺🇸 US-ss | 1-1
   - ip
   - ip1
   - ip
   - ip
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria | 8-1
+  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
