@@ -18,12 +18,16 @@ A python script to extract ChromeGo Proxies.
 ## Usage Guide
 ### Subscription Links:
 Directly use the following subscription links:
-- Clash Meta (without WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml)
-- Clash Meta (with WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml)
+- Clash Meta (without WARP): 
+  [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml)
+- Clash Meta (with WARP): 
+  [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml)
 
 (Alternate)
-- Clash Meta (without WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
-- Clash Meta (with WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml)
+- Clash Meta (without WARP): 
+  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
+- Clash Meta (with WARP): 
+  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml)
 
 ### Local Execution:
 <details>
