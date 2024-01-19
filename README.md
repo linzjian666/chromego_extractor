@@ -9,6 +9,43 @@ A python script to extract ChromeGo Proxies.
 > * 感谢[Alvin9999](https://github.com/Alvin9999/)大佬
 > * 感谢[chromegopacs](https://github.com/markbang/chromegopacs)提供的区域代码设置思路
 
+## 使用说明
+### 订阅链接：
+直接使用下面的订阅链接：
+- Clash Meta (不带WARP):[https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml)
+- Clash Meta (带WARP):[https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml)
+(备用)
+- Clash Meta (不带WARP):[https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml)
+- Clash Meta (带WARP):[https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml)
+
+### 本地运行：
+#### 1. 环境要求
+确保你的环境满足以下要求：
+- Python 3.x
+- 安装所需的依赖：`pip install requests`
+
+#### 2. 下载脚本
+克隆本项目到本地：
+```bash
+git clone https://github.com/your-username/chromego-extractor.git
+```
+
+#### 3. 运行脚本
+1. 进入项目目录：
+```bash
+cd chromego-extractor
+```
+2. 运行脚本：
+```bash
+python main.py
+```
+
+#### 4. 获取代理信息
+脚本将提取 ChromeGo 代理节点信息，并保存到文件中。
+
+#### 5. 其他
+根据需要，你可以自行修改脚本的一些配置，比如保存文件的路径等。
+
 ## 免责声明
 
 **本项目仅供学习交流使用，作者不对其在实际使用中产生的任何后果负任何法律或技术责任。**
