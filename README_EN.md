@@ -10,10 +10,10 @@ A python script to extract ChromeGo Proxies.
 
 </div>
 
-## Acknowledgements
-- Thanks to the [ChromeGo](https://github.com/bannedbook/fanqiang) project
-- Thanks to [Alvin9999](https://github.com/Alvin9999/)
-- Credits to [chromegopacs](https://github.com/markbang/chromegopacs) for providing the region code setting approach
+> Acknowledgements
+> - Thanks to the [ChromeGo](https://github.com/bannedbook/fanqiang) project
+> - Thanks to [Alvin9999](https://github.com/Alvin9999/)
+> - Credits to [chromegopacs](https://github.com/markbang/chromegopacs) for providing the region code setting approach
 
 ## Usage Guide
 ### Subscription Links:
