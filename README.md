@@ -30,7 +30,7 @@ A python script to extract ChromeGo Proxies.
 #### 2. 下载脚本
 克隆本项目到本地：
 ```bash
-git clone https://github.com/your-username/chromego-extractor.git
+git clone https://github.com/linzjian666/chromego-extractor.git
 ```
 
 #### 3. 运行脚本
