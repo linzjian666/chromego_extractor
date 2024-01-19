@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-19 17:51:01
+LastEditTime: 2024-01-19 18:43:02
 '''
 import yaml
 import json
@@ -149,7 +149,7 @@ def get_physical_location(address):
         if flag_emoji == '🇹🇼':
             flag_emoji = '🇨🇳'
         return f"{flag_emoji} {country}"
-    except geoip2.errors.AddressNotFoundError as e:
+    except Exception as e:
         print(f"Error: {e}")
         return "🏳 Unknown"
     
