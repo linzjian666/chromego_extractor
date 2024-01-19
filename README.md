@@ -11,9 +11,9 @@ A python script to extract ChromeGo Proxies.
 </div>
 
 > 鸣谢
-> * 感谢[ChromeGo](https://github.com/bannedbook/fanqiang)项目
-> * 感谢[Alvin9999](https://github.com/Alvin9999/)大佬
-> * 感谢[chromegopacs](https://github.com/markbang/chromegopacs)提供的区域代码设置思路
+> - 感谢[ChromeGo](https://github.com/bannedbook/fanqiang)项目
+> - 感谢[Alvin9999](https://github.com/Alvin9999/)大佬
+> - 感谢[chromegopacs](https://github.com/markbang/chromegopacs)提供的区域代码设置思路
 
 ## 使用说明
 ### 订阅链接：
