@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-14 00:31:09
+LastEditTime: 2024-01-19 17:51:01
 '''
 import yaml
 import json
@@ -46,7 +46,7 @@ def process_clash_meta(data, index):
                 continue
         extracted_proxies.extend(proxies)
     except Exception as e:
-        logging.error(f"处理Clash配置{index}时遇到错误: {e}")
+        logging.error(f"处理Clash Meta配置{index}时遇到错误: {e}")
         return
 
 def process_hysteria(data, index):
