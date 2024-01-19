@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-19 18:46:22
+LastEditTime: 2024-01-19 23:15:04
 '''
 import yaml
 import json
@@ -38,13 +38,16 @@ def process_clash_meta(data, index):
         except:
             proxies = []
         for i, proxy in enumerate(proxies):
+            # if(f"{proxy['network']}" == 'ws'):
+
             if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
                 location = get_physical_location(proxy['server'])
                 proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
-                servers_list.append(f"{proxy['server']}:{proxy['port']}") # 将已处理的代理添加到列表中
+                servers_list.append(f"{proxy['server']}:{proxy['port']}") 
             else:
                 continue
-        extracted_proxies.extend(proxies)
+            extracted_proxies.append(proxy)
+        # extracted_proxies.extend(proxies)
     except Exception as e:
         logging.error(f"处理Clash Meta配置{index}时遇到错误: {e}")
         return
