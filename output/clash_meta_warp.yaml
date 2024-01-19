@@ -236,6 +236,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇺🇸 US-Hysteria2 | 3-0
+  type: hysteria2
+  server: 108.181.24.77
+  port: 18775
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -259,6 +267,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -281,6 +290,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -303,6 +313,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -325,6 +336,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -347,6 +359,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -369,6 +382,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -391,6 +405,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -413,6 +428,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -435,6 +451,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -457,6 +474,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -479,6 +497,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -501,6 +520,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -523,6 +543,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -545,6 +566,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -576,6 +598,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 2-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
