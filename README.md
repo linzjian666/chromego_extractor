@@ -14,11 +14,14 @@ A python script to extract ChromeGo Proxies.
 直接使用下面的订阅链接：
 - Clash Meta (不带WARP):[https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml)
 - Clash Meta (带WARP):[https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml)
+
 (备用)
 - Clash Meta (不带WARP):[https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml)
 - Clash Meta (带WARP):[https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml)
 
 ### 本地运行：
+<details>
+
 #### 1. 环境要求
 确保你的环境满足以下要求：
 - Python 3.x
@@ -45,6 +48,8 @@ python main.py
 
 #### 5. 其他
 根据需要，你可以自行修改脚本的一些配置，比如保存文件的路径等。
+
+</details>
 
 ## 免责声明
 
