@@ -73,3 +73,8 @@ python main.py
 
 ---
 **欢迎提出问题或为本项目的开发做出贡献！**
+
+<!--
+## 统计
+![Star History Chart](https://api.star-history.com/svg?repos=linzjian666/chromego_extractor&type=Date)
+-->
