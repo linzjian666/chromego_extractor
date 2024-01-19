@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-19 18:43:02
+LastEditTime: 2024-01-19 18:46:22
 '''
 import yaml
 import json
@@ -175,7 +175,7 @@ if __name__ == "__main__":
     servers_list = []
 
     # 处理clash urls
-    process_urls('./urls/clash_urls.txt', process_clash_meta)
+    process_urls('./urls/clash_meta_urls.txt', process_clash_meta)
 
     # 处理hysteria urls
     process_urls('./urls/hysteria_urls.txt', process_hysteria)
