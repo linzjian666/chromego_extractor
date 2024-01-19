@@ -18,12 +18,12 @@ A python script to extract ChromeGo Proxies.
 ## Usage Guide
 ### Subscription Links:
 Directly use the following subscription links:
-- Clash Meta (without WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta.yaml)
-- Clash Meta (with WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/output/clash_meta_warp.yaml)
+- Clash Meta (without WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml)
+- Clash Meta (with WARP): [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml)
 
 (Alternate)
-- Clash Meta (without WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta.yaml)
-- Clash Meta (with WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/output/clash_meta_warp.yaml)
+- Clash Meta (without WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
+- Clash Meta (with WARP): [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml)
 
 ### Local Execution:
 <details>
@@ -50,7 +50,7 @@ python main.py
 ```
 
 #### 4. Obtain Proxy Information
-The script will extract ChromeGo proxy node information and save it to the `output` directory.
+The script will extract ChromeGo proxy node information and save it to the `outputs` directory.
 
 #### 5. Additional Information
 As needed, you can modify certain configurations in the script, such as the file save path.

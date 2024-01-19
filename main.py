@@ -186,5 +186,5 @@ if __name__ == "__main__":
     # logging.info(servers_list)
 
     # 写入clash meta配置
-    write_clash_profile('./templates/clash_meta.yaml', './output/clash_meta.yaml', extracted_proxies)
-    write_clash_profile('./templates/clash_meta_warp.yaml', './output/clash_meta_warp.yaml', extracted_proxies)
+    write_clash_profile('./templates/clash_meta.yaml', './outputs/clash_meta.yaml', extracted_proxies)
+    write_clash_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
