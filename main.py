@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-21 21:17:20
+LastEditTime: 2024-01-21 22:09:09
 '''
 import yaml
 import json
@@ -97,7 +97,7 @@ def process_hysteria(data, index):
         }
         if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
             extracted_proxies.append(proxy)
-            servers_list.append(f"{proxy['server']}:{proxy['port']}")
+            servers_list.append(f"{proxy['server']}:{proxy['port']}-hysteria")
         else:
             return
     except Exception as e:
@@ -132,7 +132,7 @@ def process_hysteria2(data, index):
         }
         if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
             extracted_proxies.append(proxy)
-            servers_list.append(f"{proxy['server']}:{proxy['port']}")
+            servers_list.append(f"{proxy['server']}:{proxy['port']}-hysteria2")
         else:
             return
     except Exception as e:
@@ -161,7 +161,7 @@ def get_physical_location(address):
         # logging.error(f"区域代码获取失败: {e}")
         return "🏳 Unknown"
     
-def write_clash_profile(template_file, output_file, extracted_proxies):
+def write_clash_meta_profile(template_file, output_file, extracted_proxies):
     with open(template_file, 'r', encoding='utf-8') as f:
         profile = yaml.safe_load(f)
     if 'proxies' not in profile or not profile['proxies']:
@@ -177,6 +177,9 @@ def write_clash_profile(template_file, output_file, extracted_proxies):
     # 写入yaml文件
     with open(output_file, 'w', encoding='utf-8') as f:
         yaml.dump(profile, f, sort_keys=False, allow_unicode=True)
+
+# def write_proxy_urls(output_url_file, output_base64_file, extracted_proxies):
+
 
 if __name__ == "__main__":
     extracted_proxies = []
@@ -194,5 +197,5 @@ if __name__ == "__main__":
     # logging.info(servers_list)
 
     # 写入clash meta配置
-    write_clash_profile('./templates/clash_meta.yaml', './outputs/clash_meta.yaml', extracted_proxies)
-    write_clash_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
+    write_clash_meta_profile('./templates/clash_meta.yaml', './outputs/clash_meta.yaml', extracted_proxies)
+    write_clash_meta_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
