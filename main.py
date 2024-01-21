@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-19 23:15:04
+LastEditTime: 2024-01-21 21:17:20
 '''
 import yaml
 import json
@@ -38,12 +38,17 @@ def process_clash_meta(data, index):
         except:
             proxies = []
         for i, proxy in enumerate(proxies):
-            # if(f"{proxy['network']}" == 'ws'):
-
-            if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
+            if('network' in proxy and f"{proxy['network']}" == 'ws'):
+                if(f"{proxy['server']}:{proxy['port']}-{proxy['ws-opts']['headers']['host']}-ws" not in servers_list):
+                    location = get_physical_location(proxy['server'])
+                    proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
+                    servers_list.append(f"{proxy['server']}:{proxy['port']}-{proxy['ws-opts']['headers']['host']}-ws")
+                else:
+                    continue
+            elif(f"{proxy['server']}:{proxy['port']}-{proxy['type']}" not in servers_list):
                 location = get_physical_location(proxy['server'])
                 proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
-                servers_list.append(f"{proxy['server']}:{proxy['port']}") 
+                servers_list.append(f"{proxy['server']}:{proxy['port']}-{proxy['type']}") 
             else:
                 continue
             extracted_proxies.append(proxy)
@@ -153,7 +158,7 @@ def get_physical_location(address):
             flag_emoji = '🇨🇳'
         return f"{flag_emoji} {country}"
     except Exception as e:
-        print(f"Error: {e}")
+        # logging.error(f"区域代码获取失败: {e}")
         return "🏳 Unknown"
     
 def write_clash_profile(template_file, output_file, extracted_proxies):

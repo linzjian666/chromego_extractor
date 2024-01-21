@@ -85,6 +85,21 @@ proxies:
     path: /gzogws
     headers:
       host: xray1.freeh1.xyz
+- name: 🇨🇦 CA-vmess | 5-1
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
   server: www2.dtku48.xyz
@@ -216,6 +231,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -238,6 +254,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -259,6 +276,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -280,6 +298,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -301,6 +320,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -322,6 +342,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -343,6 +364,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -364,6 +386,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -385,6 +408,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -406,6 +430,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -427,6 +452,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -448,6 +474,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -478,6 +505,7 @@ proxy-groups:
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🇺🇸 US-vmess | 4-1
+  - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
