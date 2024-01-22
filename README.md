@@ -32,7 +32,10 @@ A python script to extract ChromeGo Proxies
 
   [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls)
 
-(备用)
+<details>
+
+<summary>(备用)</summary>
+
 - Clash Meta (不带WARP):
   
   [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
@@ -46,6 +49,8 @@ A python script to extract ChromeGo Proxies
 - Proxy urls:
 
   [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls)
+
+</details>
 
 ### 本地运行：
 <details>
