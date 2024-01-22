@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-21 22:09:09
+LastEditTime: 2024-01-22 17:01:26
 '''
 import yaml
 import json
@@ -12,6 +12,7 @@ import logging
 import geoip2.database
 import socket
 import re
+import base64
 
 def process_urls(urls_file, method):
     try:
@@ -67,7 +68,7 @@ def process_hysteria(data, index):
         ports = server_ports_slt[1]
         ports_slt = ports.split(",")
         server_port = int(ports_slt[0])
-        if len(ports_slt) > 1:
+        if(len(ports_slt) > 1):
             mport = ports_slt[1]
         else:
             mport = server_port
@@ -86,7 +87,7 @@ def process_hysteria(data, index):
             "server": server,
             "port": server_port,
             "ports": mport,
-            "auth_str": auth,
+            "auth-str": auth,
             "up": 80,
             "down": 100,
             "fast-open": fast_open,
@@ -154,7 +155,7 @@ def get_physical_location(address):
         flag_emoji = ''
         for i in range(len(country)):
             flag_emoji += chr(ord(country[i]) + ord('🇦') - ord('A'))  # 
-        if flag_emoji == '🇹🇼':
+        if(flag_emoji == '🇹🇼'):
             flag_emoji = '🇨🇳'
         return f"{flag_emoji} {country}"
     except Exception as e:
@@ -164,13 +165,13 @@ def get_physical_location(address):
 def write_clash_meta_profile(template_file, output_file, extracted_proxies):
     with open(template_file, 'r', encoding='utf-8') as f:
         profile = yaml.safe_load(f)
-    if 'proxies' not in profile or not profile['proxies']:
+    if('proxies' not in profile or not profile['proxies']):
         profile['proxies'] = extracted_proxies
     else:
         profile['proxies'].extend(extracted_proxies)
     for group in profile['proxy-groups']:
-        if group['name'] in ['🚀 节点选择','♻️ 自动选择','⚖ 负载均衡','☁ WARP前置节点','📺 巴哈姆特','📺 哔哩哔哩','🌏 国内媒体','🌍 国外媒体','📲 电报信息','Ⓜ️ 微软云盘','Ⓜ️ 微软服务','🍎 苹果服务','📢 谷歌FCM','🤖 OpenAI','🐟 漏网之鱼']:
-            if 'proxies' not in group or not group['proxies']:
+        if(group['name'] in ['🚀 节点选择','♻️ 自动选择','⚖ 负载均衡','☁ WARP前置节点','📺 巴哈姆特','📺 哔哩哔哩','🌏 国内媒体','🌍 国外媒体','📲 电报信息','Ⓜ️ 微软云盘','Ⓜ️ 微软服务','🍎 苹果服务','📢 谷歌FCM','🤖 OpenAI','🐟 漏网之鱼']):
+            if('proxies' not in group or not group['proxies']):
                 group['proxies'] = [proxy['name'] for proxy in extracted_proxies]
             else:
                 group['proxies'].extend(proxy['name'] for proxy in extracted_proxies)
@@ -178,12 +179,125 @@ def write_clash_meta_profile(template_file, output_file, extracted_proxies):
     with open(output_file, 'w', encoding='utf-8') as f:
         yaml.dump(profile, f, sort_keys=False, allow_unicode=True)
 
-# def write_proxy_urls(output_url_file, output_base64_file, extracted_proxies):
+def write_proxy_urls(output_file, proxies):
+    for proxy in proxies:
+        try:
+            if(proxy['type'] == 'vless'):
+                name = proxy['name']
+                server = proxy['server']
+                port = proxy['port']
+                uuid = proxy['uuid']
+                tls = int(proxy.get('tls', 0))
+                network = proxy['network']
+                flow = proxy.get('flow', '')
+                grpc_serviceName = proxy.get('grpc-opts', {}).get('grpc-service-name', '')
+                ws_path = proxy.get('ws-opts', {}).get('path', '')
+                ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('host', '')
+                
 
+                if(tls == 0):
+                    proxy_url = f'vless://{uuid}@{server}:{port}?encryption=none&flow={flow}&security=none&type={network}&serviceName={grpc_serviceName}&host={ws_headers_host}&path={ws_path}#{name}'
+                else:
+                    sni = proxy.get('servername', '')
+                    publicKey = proxy.get('reality-opts', {}).get('public-key', '')
+                    short_id = proxy.get('reality-opts', {}).get('short-id', '')
+                    fingerprint = proxy.get('client-fingerprint', '')
+                    if(not publicKey == ''):
+                        proxy_url = f'vless://{uuid}@{server}:{port}?encryption=none&flow={flow}&security=reality&sni={sni}&fp={fingerprint}&pbk={publicKey}&sid={short_id}&type={network}&serviceName={grpc_serviceName}&host={ws_headers_host}&path={ws_path}#{name}'
+                    else:
+                        insecure = int(proxy.get('skip-cert-verify', 0))
+                        proxy_url = f'vless://{uuid}@{server}:{port}?encryption=none&flow={flow}&security=tls&sni={sni}&fp={fingerprint}&insecure={insecure}&type={network}&serviceName={grpc_serviceName}&host={ws_headers_host}&path={ws_path}#{name}' 
+            elif(proxy['type'] == 'vmess'):
+                name = proxy['name']
+                server = proxy['server']
+                port = proxy['port']
+                uuid = proxy['uuid']
+                alterId = proxy['alterId']
+                if(int(proxy.get('tls', 0)) == 1):
+                    tls = 'tls'
+                else:
+                    tls = ''
+                sni = proxy.get('servername', '')
+                network = proxy['network']
+                if(network == 'grpc'):
+                    type = 'gun'
+                    path = proxy.get('grpc-opts', {}).get('grpc-service-name', '')
+                    host = ""
+                elif(network == 'ws'):
+                    type = 'none'
+                    path = proxy.get('ws-opts', {}).get('path', "")
+                    host = proxy.get('ws-opts', {}).get('headers', {}).get('host', "")
+                else:
+                    continue
+                vmess_meta = {
+                    "v": "2",
+                    "ps": name,
+                    "add": server,
+                    "port": port,
+                    "id": uuid,
+                    "aid": alterId,
+                    "net": network,
+                    "type": type,
+                    "host": host,
+                    "path": path,
+                    "tls": tls,
+                    "sni": sni,
+                    "alpn": ""
+                }
+                # 将字典`vmess_meta`转换为 JSON 格式字符串并进行 Base64 编码
+                vmess_meta = base64.b64encode(json.dumps(vmess_meta).encode("utf-8")).decode("utf-8")
+                # 合并为完整的 `vmess://` URL
+                proxy_url = 'vmess://' + vmess_meta
+            elif(proxy['type'] == 'hysteria'):
+                name = proxy['name']
+                server = proxy['server']
+                port = proxy['port']
+                protocol = proxy.get('protocol', 'udp')
+                insecure = int(proxy.get('skip-cert-verify', 0))
+                peer = proxy.get('sni', '')
+                try:
+                    auth = proxy['auth-str']
+                except:
+                    auth = proxy['auth_str']
+                upmbps = proxy.get('up', '11')
+                downmbps = proxy.get('down', '55')
+                alpn = proxy['alpn']
+                alpn = ','.join(alpn) # 将 `alpn` 列表转换为逗号分隔的字符串
+                obfs = proxy.get('obfs', '')
+                proxy_url = f'hysteria://{server}:{port}/?protocol={protocol}&insecure={insecure}&peer={peer}&auth={auth}&upmbps={upmbps}&downmbps={downmbps}&alpn={alpn}&obfs={obfs}#{name}'
+            
+            elif(proxy['type'] == 'hysteria2'):
+                name = proxy['name']
+                server = proxy['server']
+                port = proxy['port']
+                auth = proxy['password']
+                sni = proxy.get('sni', '')
+                insecure = int(proxy.get('skip-cert-verify', 0))
+                # 如果`proxy`包含`obfs`字段，且`obfs`字段不为空
+                if('obfs' in proxy and proxy['obfs'] != ''):
+                    obfs = proxy['obfs']
+                    obfs_password = proxy['obfs-password']
+                    proxy_url = f'hysteria2://{auth}@{server}:{port}/?sni={sni}&insecure={insecure}&obfs={obfs}&obfs-password={obfs_password}#{name}'
+                else:
+                    proxy_url = f'hysteria2://{auth}@{server}:{port}/?sni={sni}&insecure={insecure}#{name}'
+            else:
+                logging.error(f'不支持的协议: {proxy["type"]}')
+                continue
+
+            # print(proxy_url)
+            proxy_urls.append(proxy_url)
+        except Exception as e:
+            logging.error(f'处理 {proxy["name"]} 时遇到问题: {e}')
+            continue
+    # 将`proxy_urls`写入`output_file`
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for proxy_url in proxy_urls:
+            f.write(proxy_url + '\n')
 
 if __name__ == "__main__":
     extracted_proxies = []
     servers_list = []
+    proxy_urls = []
 
     # 处理clash urls
     process_urls('./urls/clash_meta_urls.txt', process_clash_meta)
@@ -199,3 +313,8 @@ if __name__ == "__main__":
     # 写入clash meta配置
     write_clash_meta_profile('./templates/clash_meta.yaml', './outputs/clash_meta.yaml', extracted_proxies)
     write_clash_meta_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
+
+    # 写入代理urls
+    write_proxy_urls('./outputs/proxy_urls', extracted_proxies)
+    
+    # write_base64('./outputs/base64', proxy_urls)

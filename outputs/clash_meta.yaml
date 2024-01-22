@@ -24,9 +24,9 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: 🇫🇷 FR-vless | 0-2
+- name: 🇺🇸 US-vless | 0-2
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -145,7 +145,7 @@ proxies:
   server: 51.158.54.46
   port: 55396
   ports: 55396
-  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
@@ -159,7 +159,7 @@ proxies:
   server: 173.234.25.52
   port: 30072
   ports: 30072
-  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
@@ -173,7 +173,7 @@ proxies:
   server: 108.181.22.239
   port: 39967
   ports: 39967
-  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
@@ -187,7 +187,7 @@ proxies:
   server: 167.160.91.115
   port: 41189
   ports: 41189
-  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
+  auth-str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
   up: 80
   down: 100
   fast-open: true
@@ -235,7 +235,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -259,7 +259,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -282,7 +282,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -305,7 +305,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -328,7 +328,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -351,7 +351,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -374,7 +374,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -397,7 +397,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -420,7 +420,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -443,7 +443,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -466,7 +466,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -489,7 +489,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
@@ -521,7 +521,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇫🇷 FR-vless | 0-2
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-ss | 1-1
   - 🇺🇸 US-vless | 2-1
   - 🏳 Unknown-vmess | 4-1
