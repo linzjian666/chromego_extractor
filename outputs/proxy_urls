@@ -1,0 +1,17 @@
+vless://a9202ced-3185-489c-8b28-74e9a00d894d@dongtaiwang3.com:443?encryption=none&flow=&security=tls&sni=dongtaiwang.dtku47.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=dongtaiwang.dtku47.xyz&path=/eobjws#🇨🇦 CA-vless | 0-1
+vless://7b671cd2-233d-406c-88da-1c687727dc52@cu.dongtaiwang3.com:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇺🇸 US-vless | 0-2
+vless://ffb15cd2-0521-49de-b8aa-fb15d58c8075@cu.dongtaiwang3.com:443?encryption=none&flow=&security=tls&sni=v2ray3.freegradely.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=v2ray3.freegradely.xyz&path=/bqbows#🇺🇸 US-vless | 2-1
+vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCA0LTEiLCAiYWRkIjogImNtLmRvbmd0YWl3YW5nMy5jb20iLCAicG9ydCI6IDQ0MywgImlkIjogImY1YzE4MGViLWZiY2UtNDlhYy05MDI5LTQ4MmVjYTkzODVjMCIsICJhaWQiOiAwLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogInhyYXkxLmZyZWVoMS54eXoiLCAicGF0aCI6ICIvZ3pvZ3dzIiwgInRscyI6ICJ0bHMiLCAic25pIjogIiIsICJhbHBuIjogIiJ9
+vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGU4XHVkODNjXHVkZGU2IENBLXZtZXNzIHwgNS0xIiwgImFkZCI6ICJkb25ndGFpd2FuZzMuY29tIiwgInBvcnQiOiA0NDMsICJpZCI6ICJmNWMxODBlYi1mYmNlLTQ5YWMtOTAyOS00ODJlY2E5Mzg1YzAiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJ4cmF5MS5mcmVlaDEueHl6IiwgInBhdGgiOiAiL2d6b2d3cyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICIiLCAiYWxwbiI6ICIifQ==
+hysteria://www2.dtku48.xyz:22334/?protocol=udp&insecure=1&peer=&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇨🇳 TW-hysteria | 6-1
+hysteria2://dongtaiwang.com@51.158.54.46:44550/?sni=bing.com&insecure=1#🇫🇷 FR-hysteria2 | 7-1
+hysteria2://d017e316-82cb-441c-8eea-7b5e9de64a20@45.150.165.84:8881/?sni=&insecure=1&obfs=salamander&obfs-password=d017e316-82cb-441c-8eea-7b5e9de64a20#🇺🇸 US-hysteria2 | 8-1
+hysteria://www.dtku50.xyz:32408/?protocol=udp&insecure=1&peer=www.amazon.cn&auth=dongtaiwang.com&upmbps=2&downmbps=10&alpn=h3&obfs=#🇨🇳 TW-hysteria | 9-1
+hysteria://51.158.54.46:55396/?protocol=udp&insecure=1&peer=youku.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
+hysteria://173.234.25.52:30072/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 1-0
+hysteria://108.181.22.239:39967/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 2-0
+hysteria://167.160.91.115:41189/?protocol=udp&insecure=1&peer=www.amazon.cn&auth=bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 3-0
+hysteria2://dongtaiwang.com@62.210.101.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 1-0
+hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 2-0
+hysteria2://dongtaiwang.com@108.181.24.77:18775/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 3-0

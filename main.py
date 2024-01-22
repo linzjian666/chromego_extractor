@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-22 17:01:26
+LastEditTime: 2024-01-22 17:10:08
 '''
 import yaml
 import json
@@ -180,6 +180,7 @@ def write_clash_meta_profile(template_file, output_file, extracted_proxies):
         yaml.dump(profile, f, sort_keys=False, allow_unicode=True)
 
 def write_proxy_urls(output_file, proxies):
+    proxy_urls = []
     for proxy in proxies:
         try:
             if(proxy['type'] == 'vless'):
@@ -294,10 +295,15 @@ def write_proxy_urls(output_file, proxies):
         for proxy_url in proxy_urls:
             f.write(proxy_url + '\n')
 
+def write_base64(output_file, proxy_urls_file):
+    with open(proxy_urls_file, 'r', encoding='utf-8') as f:
+        proxy_urls = f.read()
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(base64.b64encode(proxy_urls.encode('utf-8')).decode('utf-8'))
+
 if __name__ == "__main__":
     extracted_proxies = []
     servers_list = []
-    proxy_urls = []
 
     # 处理clash urls
     process_urls('./urls/clash_meta_urls.txt', process_clash_meta)
@@ -317,4 +323,4 @@ if __name__ == "__main__":
     # 写入代理urls
     write_proxy_urls('./outputs/proxy_urls', extracted_proxies)
     
-    # write_base64('./outputs/base64', proxy_urls)
+    write_base64('./outputs/base64', './outputs/proxy_urls')
