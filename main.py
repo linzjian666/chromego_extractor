@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-22 17:10:08
+LastEditTime: 2024-01-23 10:53:46
 '''
 import yaml
 import json
@@ -179,7 +179,7 @@ def write_clash_meta_profile(template_file, output_file, extracted_proxies):
     with open(output_file, 'w', encoding='utf-8') as f:
         yaml.dump(profile, f, sort_keys=False, allow_unicode=True)
 
-def write_proxy_urls(output_file, proxies):
+def write_proxy_urls_file(output_file, proxies):
     proxy_urls = []
     for proxy in proxies:
         try:
@@ -193,8 +193,10 @@ def write_proxy_urls(output_file, proxies):
                 flow = proxy.get('flow', '')
                 grpc_serviceName = proxy.get('grpc-opts', {}).get('grpc-service-name', '')
                 ws_path = proxy.get('ws-opts', {}).get('path', '')
-                ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('host', '')
-                
+                try:
+                    ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('host', '')
+                except:
+                    ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
                 if(tls == 0):
                     proxy_url = f'vless://{uuid}@{server}:{port}?encryption=none&flow={flow}&security=none&type={network}&serviceName={grpc_serviceName}&host={ws_headers_host}&path={ws_path}#{name}'
@@ -227,7 +229,10 @@ def write_proxy_urls(output_file, proxies):
                 elif(network == 'ws'):
                     type = 'none'
                     path = proxy.get('ws-opts', {}).get('path', "")
-                    host = proxy.get('ws-opts', {}).get('headers', {}).get('host', "")
+                    try:
+                        host = proxy.get('ws-opts', {}).get('headers', {}).get('host', "")
+                    except:
+                        host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', "")
                 else:
                     continue
                 vmess_meta = {
@@ -295,7 +300,7 @@ def write_proxy_urls(output_file, proxies):
         for proxy_url in proxy_urls:
             f.write(proxy_url + '\n')
 
-def write_base64(output_file, proxy_urls_file):
+def write_base64_file(output_file, proxy_urls_file):
     with open(proxy_urls_file, 'r', encoding='utf-8') as f:
         proxy_urls = f.read()
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -321,6 +326,6 @@ if __name__ == "__main__":
     write_clash_meta_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
 
     # 写入代理urls
-    write_proxy_urls('./outputs/proxy_urls', extracted_proxies)
+    write_proxy_urls_file('./outputs/proxy_urls', extracted_proxies)
     
-    write_base64('./outputs/base64', './outputs/proxy_urls')
+    write_base64_file('./outputs/base64', './outputs/proxy_urls')
