@@ -13,7 +13,7 @@ global-client-fingerprint: chrome
 proxies:
 - name: 🇨🇦 CA-vless | 0-1
   type: vless
-  server: dongtaiwang3.com
+  server: 23.227.38.51
   port: 443
   uuid: a9202ced-3185-489c-8b28-74e9a00d894d
   tls: true
@@ -24,9 +24,9 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 0-2
+- name: 🇨🇦 CA-vless | 0-2
   type: vless
-  server: cu.dongtaiwang3.com
+  server: dongtaiwang2.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -37,49 +37,35 @@ proxies:
     headers:
       host: fr.freeh1.xyz
   client-fingerprint: chrome
-- name: 🇫🇷 FR-ss | 1-1
-  type: ss
-  server: 62.210.103.0
-  port: 12299
-  cipher: 2022-blake3-aes-128-gcm
-  password: guXsVF5bET8TgJV0HYUYew==
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: addons.mozilla.org
-    password: 1fba3104-360c-483f-9fc2-c90c85b55389
-    version: 3
-  smux:
-    enabled: true
-    protocol: h2mux
-    padding: true
-    max-connections: '8'
-    min-streams: '16'
-    statistic: true
-    only-tcp: false
-- name: 🇺🇸 US-ss | 1-2
-  type: ss
-  server: 167.160.90.252
-  port: 8883
-  cipher: 2022-blake3-aes-128-gcm
-  password: lolvK9uAhEDYTMuqCRblBg==
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: addons.mozilla.org
-    password: d3971b31-e16b-4af2-b430-afb896380543
-    version: 3
-  smux:
-    enabled: true
-    protocol: h2mux
-    padding: true
-    max-connections: '8'
-    min-streams: '16'
-    statistic: true
-    only-tcp: false
-- name: 🇺🇸 US-vless | 2-1
+- name: 🇺🇸 US-vless | 1-1
   type: vless
-  server: cu.dongtaiwang3.com
+  server: 172.67.70.101
+  port: 443
+  uuid: a9202ced-3185-489c-8b28-74e9a00d894d
+  tls: true
+  servername: dongtaiwang.dtku47.xyz
+  network: ws
+  ws-opts:
+    path: /eobjws
+    headers:
+      host: dongtaiwang.dtku47.xyz
+  client-fingerprint: chrome
+- name: 🇺🇸 US-vless | 1-2
+  type: vless
+  server: 172.67.70.103
+  port: 443
+  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
+  tls: true
+  servername: fr.freeh1.xyz
+  network: ws
+  ws-opts:
+    path: /kfhaws
+    headers:
+      host: fr.freeh1.xyz
+  client-fingerprint: chrome
+- name: 🏳 Unknown-vless | 2-1
+  type: vless
+  server: 198.41.220.101
   port: 443
   uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
   tls: true
@@ -90,9 +76,22 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
+- name: 🇨🇦 CA-vless | 3-1
+  type: vless
+  server: 23.227.39.53
+  port: 443
+  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
+  tls: true
+  servername: fr.freeh1.xyz
+  network: ws
+  ws-opts:
+    path: /kfhaws
+    headers:
+      host: fr.freeh1.xyz
+  client-fingerprint: chrome
 - name: 🏳 Unknown-vmess | 4-1
   type: vmess
-  server: cm.dongtaiwang3.com
+  server: 198.41.221.100
   port: 443
   cipher: auto
   uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
@@ -255,10 +254,11 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -280,10 +280,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -304,10 +305,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -328,10 +330,11 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -352,10 +355,11 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -376,10 +380,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -400,10 +405,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -424,10 +430,11 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -448,10 +455,11 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -472,10 +480,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -496,10 +505,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -520,10 +530,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -553,10 +564,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇦 CA-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇫🇷 FR-ss | 1-1
-  - 🇺🇸 US-ss | 1-2
-  - 🇺🇸 US-vless | 2-1
+  - 🇨🇦 CA-vless | 0-2
+  - 🇺🇸 US-vless | 1-1
+  - 🇺🇸 US-vless | 1-2
+  - 🏳 Unknown-vless | 2-1
+  - 🇨🇦 CA-vless | 3-1
   - 🏳 Unknown-vmess | 4-1
   - 🇨🇦 CA-vmess | 5-1
   - 🇨🇳 TW-hysteria | 6-1
