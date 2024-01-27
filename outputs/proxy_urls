@@ -1,6 +1,6 @@
-vless://a9202ced-3185-489c-8b28-74e9a00d894d@23.227.38.51:443?encryption=none&flow=&security=tls&sni=dongtaiwang.dtku47.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=dongtaiwang.dtku47.xyz&path=/eobjws#🇨🇦 CA-vless | 0-1
-vless://7b671cd2-233d-406c-88da-1c687727dc52@dongtaiwang2.com:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇨🇦 CA-vless | 0-2
-vless://a9202ced-3185-489c-8b28-74e9a00d894d@172.67.70.101:443?encryption=none&flow=&security=tls&sni=dongtaiwang.dtku47.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=dongtaiwang.dtku47.xyz&path=/eobjws#🇺🇸 US-vless | 1-1
+vless://7b671cd2-233d-406c-88da-1c687727dc52@23.227.38.51:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇨🇦 CA-vless | 0-1
+vless://7b671cd2-233d-406c-88da-1c687727dc52@23.227.39.51:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇨🇦 CA-vless | 0-2
+vless://7b671cd2-233d-406c-88da-1c687727dc52@172.67.70.101:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇺🇸 US-vless | 1-1
 vless://7b671cd2-233d-406c-88da-1c687727dc52@172.67.70.103:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇺🇸 US-vless | 1-2
 vless://ffb15cd2-0521-49de-b8aa-fb15d58c8075@198.41.220.101:443?encryption=none&flow=&security=tls&sni=v2ray3.freegradely.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=v2ray3.freegradely.xyz&path=/bqbows#🏳 Unknown-vless | 2-1
 vless://7b671cd2-233d-406c-88da-1c687727dc52@23.227.39.53:443?encryption=none&flow=&security=tls&sni=fr.freeh1.xyz&fp=chrome&insecure=0&type=ws&serviceName=&host=fr.freeh1.xyz&path=/kfhaws#🇨🇦 CA-vless | 3-1
@@ -16,5 +16,5 @@ hysteria://108.181.22.239:39967/?protocol=udp&insecure=1&peer=bing.com&auth=dong
 hysteria://167.160.91.115:41189/?protocol=udp&insecure=1&peer=www.amazon.cn&auth=bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 3-0
 hysteria2://dongtaiwang.com@62.210.101.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 1-0
-hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 2-0
+hysteria2://dongtaiwang.com@62.210.103.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 2-0
 hysteria2://dongtaiwang.com@108.181.24.77:18775/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 3-0
