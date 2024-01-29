@@ -37,7 +37,7 @@ jobs:
                   GITHUB_TOKEN: ${{ github.token }}
               uses: stefanzweifel/git-auto-commit-action@v4.16.0
               with:
-                    commit_message: Auto extract by Github Actions at UTC ${{ env.DATE }}
+                    commit_message: Auto extract by Github Actions at UTC $(date '+%Y-%m-%d %H:%M:%S')
                     create_branch: true
                     branch: main
                     commit_options: '--allow-empty'
