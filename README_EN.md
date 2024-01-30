@@ -22,17 +22,18 @@ A python script to extract ChromeGo Proxies.
 - Clash Meta (without WARP): 
 
   [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml)
+
 - Clash Meta (with WARP): 
 
   [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml)
 
 - Base64:
 
-  [https://raw.githubusercontent.com/linzjian666/chrome_extractor/main/outputs/base64](https://raw.githubusercontent.com/linzjian666/chrome_extractor/main/outputs/base64)
+  [https://raw.githubusercontent.com/linzjian666/chrome_extractor/main/outputs/base64.txt](https://raw.githubusercontent.com/linzjian666/chrome_extractor/main/outputs/base64.txt)
 
 - Proxy urls:
 
-  [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls)
+  [https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls.txt](https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/proxy_urls.txt)
 
 <details>
 
@@ -48,11 +49,11 @@ A python script to extract ChromeGo Proxies.
   
 - Base64:
 
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64)
+  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt)
 
 - Proxy urls:
 
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls)
+  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt)
 
 </details>
 
