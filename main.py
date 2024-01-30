@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-23 10:53:46
+LastEditTime: 2024-01-31 00:32:43
 '''
 import yaml
 import json
@@ -326,6 +326,6 @@ if __name__ == "__main__":
     write_clash_meta_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
 
     # 写入代理urls
-    write_proxy_urls_file('./outputs/proxy_urls', extracted_proxies)
+    write_proxy_urls_file('./outputs/proxy_urls.txt', extracted_proxies)
     
-    write_base64_file('./outputs/base64', './outputs/proxy_urls')
+    write_base64_file('./outputs/base64.txt', './outputs/proxy_urls.txt')
