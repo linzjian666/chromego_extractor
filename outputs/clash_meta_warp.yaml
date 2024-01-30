@@ -30,114 +30,62 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇨🇦 CA-vless | 0-1
-  type: vless
-  server: 23.227.38.51
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: 🇨🇦 CA-vless | 0-2
-  type: vless
-  server: 23.227.39.51
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 1-1
-  type: vless
-  server: 172.67.70.101
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 1-2
-  type: vless
-  server: 172.67.70.103
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: 🏳 Unknown-vless | 2-1
-  type: vless
-  server: 198.41.220.101
-  port: 443
-  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
-  tls: true
-  servername: v2ray3.freegradely.xyz
-  network: ws
-  ws-opts:
-    path: /bqbows
-    headers:
-      host: v2ray3.freegradely.xyz
-  client-fingerprint: chrome
-- name: 🇨🇦 CA-vless | 3-1
-  type: vless
-  server: 23.227.39.53
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
-  network: ws
-  ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: 🏳 Unknown-vmess | 4-1
+- name: 🇺🇸 US-ss | 0-1
+  type: ss
+  server: uydyfkghjrtcsdx.youcansee.cyou
+  port: 20167
+  password: 81416f3c-5b00-4056-8e5f-d7ffdd884bf4
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇳 CN-ss | 0-2
+  type: ss
+  server: service.ouluyun9803.com
+  port: 26601
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇳 CN-ss | 0-3
+  type: ss
+  server: service.ouluyun9803.com
+  port: 26668
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  cipher: chacha20-ietf-poly1305
+- name: 🇨🇦 CA-vmess | 0-4
   type: vmess
-  server: 198.41.221.100
-  port: 443
+  server: 149.56.7.123
+  port: 27490
   cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  uuid: 3722f77b-21b0-4892-b9f7-79c33b76e733
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /gzogws
+    path: /
     headers:
-      host: xray1.freeh1.xyz
-- name: 🇨🇦 CA-vmess | 5-1
+      host: jkgd.sbs
+- name: 🇨🇿 CZ-vmess | 0-5
   type: vmess
-  server: 23.227.38.121
-  port: 443
+  server: 94.131.97.123
+  port: 80
   cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /gzogws
+    path: /vmess
     headers:
-      host: xray1.freeh1.xyz
+      host: cz1-vmess.sshmax.xyz
+- name: 🇺🇸 US-vmess | 4-1
+  type: vmess
+  server: 108.181.2.154
+  port: 33445
+  cipher: auto
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 - name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
   server: www2.dtku48.xyz
@@ -273,14 +221,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -299,14 +245,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -325,14 +269,12 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -351,14 +293,12 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -377,14 +317,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -403,14 +341,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -429,14 +365,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -455,14 +389,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -481,14 +413,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -507,14 +437,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -533,14 +461,12 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -559,14 +485,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -585,14 +509,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -611,14 +533,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -646,14 +566,12 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇦 CA-vless | 0-1
-  - 🇨🇦 CA-vless | 0-2
-  - 🇺🇸 US-vless | 1-1
-  - 🇺🇸 US-vless | 1-2
-  - 🏳 Unknown-vless | 2-1
-  - 🇨🇦 CA-vless | 3-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇨🇦 CA-vmess | 5-1
+  - 🇺🇸 US-ss | 0-1
+  - 🇨🇳 CN-ss | 0-2
+  - 🇨🇳 CN-ss | 0-3
+  - 🇨🇦 CA-vmess | 0-4
+  - 🇨🇿 CZ-vmess | 0-5
+  - 🇺🇸 US-vmess | 4-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
