@@ -32,6 +32,20 @@ proxies:
   dialer-proxy: ☁ WARP前置节点
 - name: 🇺🇸 US-vless | 0-1
   type: vless
+  server: 109.104.152.4
+  port: 16414
+  udp: true
+  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
+  tls: true
+  servername: mensura.cdn-apple.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 🇺🇸 US-vless | 0-2
+  type: vless
   server: 108.181.5.130
   port: 17346
   udp: true
@@ -201,6 +215,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -222,6 +237,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -243,6 +259,7 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -264,6 +281,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -285,6 +303,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -306,6 +325,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -327,6 +347,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -348,6 +369,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -369,6 +391,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -390,6 +413,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -411,6 +435,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -432,6 +457,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -453,6 +479,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -474,6 +501,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
@@ -504,6 +532,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vless | 0-2
   - 🇺🇸 US-vmess | 1-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
