@@ -41,19 +41,19 @@ A python script to extract ChromeGo Proxies
 
 - Clash Meta (不带WARP):
   
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
+  [https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml](https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta.yaml)
 
 - Clash Meta (带WARP):
   
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml)
+  [https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml](https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/clash_meta_warp.yaml)
   
 - Base64:
 
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt)
+  [https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt](https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/base64.txt)
 
 - Proxy urls:
 
-  [https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt](https://fastly.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt)
+  [https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt](https://gcore.jsdelivr.net/gh/linzjian666/chromego_extractor@main/outputs/proxy_urls.txt)
 
 </details>
 
