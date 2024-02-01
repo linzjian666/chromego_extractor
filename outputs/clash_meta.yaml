@@ -11,7 +11,21 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇺🇸 US-vless | 0-1
+- name: 🇫🇷 FR-vless | 0-1
+  type: vless
+  server: 51.159.103.141
+  port: 12207
+  udp: true
+  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
+  tls: true
+  servername: s0.awsstatic.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 🇺🇸 US-vless | 0-2
   type: vless
   server: 109.104.152.4
   port: 16414
@@ -25,7 +39,7 @@ proxies:
     public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 0-2
+- name: 🇺🇸 US-vless | 0-3
   type: vless
   server: 108.181.5.130
   port: 17346
@@ -39,7 +53,7 @@ proxies:
     public-key: O5x9mSGdETFh_ql4m_2dPEUNBVwCly9XSi9pu1teLls
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: 🇺🇸 US-vmess | 1-1
+- name: 🇺🇸 US-vmess | 2-1
   type: vmess
   server: 108.181.2.154
   port: 33445
@@ -194,9 +208,10 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -216,9 +231,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -237,9 +253,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -258,9 +275,10 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -279,9 +297,10 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -300,9 +319,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -321,9 +341,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -342,9 +363,10 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -363,9 +385,10 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -384,9 +407,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -405,9 +429,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -426,9 +451,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
@@ -456,9 +482,10 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇫🇷 FR-vless | 0-1
   - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vless | 0-3
+  - 🇺🇸 US-vmess | 2-1
   - 🇺🇸 US-vmess | 3-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
