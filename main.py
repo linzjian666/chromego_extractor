@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-01-31 00:32:43
+LastEditTime: 2024-02-02 11:09:40
 '''
 import yaml
 import json
@@ -72,10 +72,10 @@ def process_hysteria(data, index):
             mport = ports_slt[1]
         else:
             mport = server_port
-        # fast_open = content["fast_open"]
-        fast_open = True
+        fast_open = content.get("fast_open", True)
+        # fast_open = True
         insecure = content["insecure"]
-        server_name = content["server_name"]
+        sni = content["server_name"]
         alpn = content["alpn"]
         protocol = content["protocol"]
         location = get_physical_location(server)
@@ -92,11 +92,11 @@ def process_hysteria(data, index):
             "down": 100,
             "fast-open": fast_open,
             "protocol": protocol,
-            "sni": server_name,
+            "sni": sni,
             "skip-cert-verify": insecure,
             "alpn": [alpn]
         }
-        if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
+        if(f"{proxy['server']}:{proxy['port']}-hysteria" not in servers_list):
             extracted_proxies.append(proxy)
             servers_list.append(f"{proxy['server']}:{proxy['port']}-hysteria")
         else:
@@ -114,8 +114,6 @@ def process_hysteria2(data, index):
         ports = server_ports_slt[1]
         ports_slt = ports.split(",")
         server_port = int(ports_slt[0])
-        # fast_open = content["fast_open"]
-        fast_open = True
         insecure = content["tls"]["insecure"]
         sni = content["tls"]["sni"]
         location = get_physical_location(server)
@@ -127,11 +125,10 @@ def process_hysteria2(data, index):
             "server": server,
             "port": server_port,
             "password": auth,
-            "fast-open": fast_open,
             "sni": sni,
             "skip-cert-verify": insecure
         }
-        if(f"{proxy['server']}:{proxy['port']}" not in servers_list):
+        if(f"{proxy['server']}:{proxy['port']}-hysteria2" not in servers_list):
             extracted_proxies.append(proxy)
             servers_list.append(f"{proxy['server']}:{proxy['port']}-hysteria2")
         else:
@@ -139,6 +136,149 @@ def process_hysteria2(data, index):
     except Exception as e:
         logging.error(f"处理Hysteria2配置{index}时遇到错误: {e}")
         return
+
+def process_xray(data, index):
+    try:
+        content = json.loads(data)
+        outbounds = content["outbounds"]
+        pending_proxy = outbounds[0]
+        type = pending_proxy["protocol"]
+        if(type == "vmess"):
+            server = pending_proxy["settings"]["vnext"][0]["address"]
+            port = pending_proxy["settings"]["vnext"][0]["port"]
+            uuid = pending_proxy["settings"]["vnext"][0]["users"][0]["id"]
+            alterId = pending_proxy["settings"]["vnext"][0]["users"][0]["alterId"]
+            cipher = pending_proxy["settings"]["vnext"][0]["users"][0]["security"]
+            network = pending_proxy["streamSettings"]["network"]
+            security = pending_proxy["streamSettings"].get("security", "none")
+            location = get_physical_location(server)
+            name = f"{location}-{type} | {index}-0"
+            if(security == "none"):
+                tls = False
+            else:
+                tls = True
+            sni = pending_proxy["streamSettings"].get("tlsSettings", {}).get("serverName", "")
+            allowInsecure = pending_proxy["streamSettings"].get("tlsSettings", {}).get("allowInsecure", False)
+
+            if(network in ["tcp", "ws", "grpc", "h2"]):
+                ws_path = pending_proxy["streamSettings"].get("wsSettings", {}).get("path", "")
+                ws_headers = pending_proxy["streamSettings"].get("wsSettings", {}).get("headers", {})
+                grpc_serviceName = pending_proxy["streamSettings"].get("grpcSettings", {}).get("serviceName", "/")
+                h2_path = pending_proxy["streamSettings"].get("httpSettings", {}).get("path", "/")
+                h2_host = pending_proxy["streamSettings"].get("httpSettings", {}).get("host", [])
+
+                proxy = {
+                    "name": name,
+                    "type": "vmess",
+                    "server": server,
+                    "port": port,
+                    "uuid": uuid,
+                    "alterId": alterId,
+                    "cipher": cipher,
+                    "tls": tls,
+                    "servername": sni,
+                    "skip-cert-verify": allowInsecure,
+                    "network": network,
+                    "ws-opts": {
+                        "path": ws_path,
+                        "headers": ws_headers
+                    },
+                    "grpc-opts": {
+                        "serviceName": grpc_serviceName
+                    },
+                    "h2-opts": {
+                        "path": h2_path,
+                        "host": h2_host
+                    }
+                }
+            else:
+                logging.error(f"处理Xray配置{index}时遇到错误: 不支持的VMess传输协议: {network}")
+                return
+        elif(type == "vless"):
+            server = pending_proxy["settings"]["vnext"][0]["address"]
+            port = pending_proxy["settings"]["vnext"][0]["port"]
+            uuid = pending_proxy["settings"]["vnext"][0]["users"][0]["id"]
+            flow = pending_proxy["settings"]["vnext"][0]["users"][0].get("flow", "")
+            security = pending_proxy["streamSettings"].get("security", "none")
+            network = pending_proxy["streamSettings"]["network"]
+            location = get_physical_location(server)
+            name = f"{location}-{type} | {index}-0"
+
+            if(security == "none"):
+                tls = False
+            else:
+                tls = True
+            if(security == "reality"):
+                realitySettings = pending_proxy["streamSettings"].get("realitySettings", {})
+                sni = realitySettings.get("serverName", "")
+                short_id = realitySettings.get("shortId", "")
+                publicKey = realitySettings["publicKey"]
+                fingerprint = realitySettings["fingerprint"]
+                proxy = {
+                    "name": name,
+                    "type": "vless",
+                    "server": server,
+                    "port": port,
+                    "uuid": uuid,
+                    "flow": flow,
+                    "tls": tls,
+                    "servername": sni,
+                    "network": network,
+                    "client-fingerprint": fingerprint,
+                    "grpc-opts": {
+                        "grpc-service-name": grpc_serviceName
+                    },
+                    "reality-opts": {
+                        "public-key": publicKey,
+                        "short-id": short_id,
+                    }
+                }
+            else:
+                if(network in ["tcp", "ws", "grpc"]):
+                    ws_path = pending_proxy["streamSettings"].get("wsSettings", {}).get("path", "")
+                    ws_headers = pending_proxy["streamSettings"].get("wsSettings", {}).get("headers", {})
+                    grpc_serviceName = pending_proxy["streamSettings"].get("grpcSettings", {}).get("serviceName", "/")
+
+                    proxy = {
+                        "name": name,
+                        "type": "vless",
+                        "server": server,
+                        "port": port,
+                        "uuid": uuid,
+                        "tls": tls,
+                        "servername": sni,
+                        "skip-cert-verify": allowInsecure,
+                        "network": network,
+                        "ws-opts": {
+                            "path": ws_path,
+                            "headers": ws_headers
+                        },
+                        "grpc-opts": {
+                            "serviceName": grpc_serviceName
+                        }
+                    }
+                else:
+                    logging.error(f"处理Xray配置{index}时遇到错误: 不支持的VLESS传输协议: {network}")
+                    return
+        else:
+            logging.error(f"处理Xray配置{index}时遇到错误: 不支持的传输协议: {type}")
+            return
+        if(f"{proxy['server']}:{proxy['port']}-{proxy['type']}" not in servers_list):
+            extracted_proxies.append(proxy)
+            servers_list.append(f"{proxy['server']}:{proxy['port']}-{proxy['type']}")
+        else:
+            return
+        
+        # print(security)
+        # if(type == "vmess"):
+        #     
+        # elif(type == "shadowsocks"):
+        #     cipher = pending_proxy["settings"]["vnext"][0]["users"][0]["method"]
+        # else:
+        #     cipher = "none"
+
+    except Exception as e:
+        logging.error(f"处理Xray配置{index}时遇到错误: {e}")
 
 def get_physical_location(address):
     address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
@@ -210,6 +350,7 @@ def write_proxy_urls_file(output_file, proxies):
                     else:
                         insecure = int(proxy.get('skip-cert-verify', 0))
                         proxy_url = f'vless://{uuid}@{server}:{port}?encryption=none&flow={flow}&security=tls&sni={sni}&fp={fingerprint}&insecure={insecure}&type={network}&serviceName={grpc_serviceName}&host={ws_headers_host}&path={ws_path}#{name}' 
+            
             elif(proxy['type'] == 'vmess'):
                 name = proxy['name']
                 server = proxy['server']
@@ -222,9 +363,9 @@ def write_proxy_urls_file(output_file, proxies):
                     tls = ''
                 sni = proxy.get('servername', '')
                 network = proxy['network']
-                if(network == 'grpc'):
-                    type = 'gun'
-                    path = proxy.get('grpc-opts', {}).get('grpc-service-name', '')
+                if(network == 'tcp'):
+                    type = 'none'
+                    path = ""
                     host = ""
                 elif(network == 'ws'):
                     type = 'none'
@@ -233,6 +374,16 @@ def write_proxy_urls_file(output_file, proxies):
                         host = proxy.get('ws-opts', {}).get('headers', {}).get('host', "")
                     except:
                         host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', "")
+                elif(network == 'grpc'):
+                    type = 'gun'
+                    path = proxy.get('grpc-opts', {}).get('grpc-service-name', '')
+                    host = ""
+                elif(network == 'h2'):
+                    type = 'none'
+                    path = proxy.get('h2-opts', {}).get('path', "")
+                    # 获取host并将host列表转换为逗号分隔的字符串
+                    host = proxy.get('h2-opts', {}).get('host', [])
+                    host = ','.join(host)
                 else:
                     continue
                 vmess_meta = {
@@ -254,6 +405,18 @@ def write_proxy_urls_file(output_file, proxies):
                 vmess_meta = base64.b64encode(json.dumps(vmess_meta).encode("utf-8")).decode("utf-8")
                 # 合并为完整的 `vmess://` URL
                 proxy_url = 'vmess://' + vmess_meta
+            
+            elif(proxy['type'] == 'ss'):
+                name = proxy['name']
+                server = proxy['server']
+                port = proxy['port']
+                password = proxy['password']
+                cipher = proxy['cipher']
+                ss_meta = base64.b64encode(f"{cipher}:{password}").decode("utf-8")
+                ss_meta = f"{ss_meta}@{server}:{port}#{name}"
+                proxy_url = 'ss://' + ss_meta
+
+            
             elif(proxy['type'] == 'hysteria'):
                 name = proxy['name']
                 server = proxy['server']
@@ -286,8 +449,9 @@ def write_proxy_urls_file(output_file, proxies):
                     proxy_url = f'hysteria2://{auth}@{server}:{port}/?sni={sni}&insecure={insecure}&obfs={obfs}&obfs-password={obfs_password}#{name}'
                 else:
                     proxy_url = f'hysteria2://{auth}@{server}:{port}/?sni={sni}&insecure={insecure}#{name}'
+            
             else:
-                logging.error(f'不支持的协议: {proxy["type"]}')
+                logging.error(f'处理 {name} 时遇到问题: 不支持的协议: {proxy["type"]}')
                 continue
 
             # print(proxy_url)
@@ -310,7 +474,7 @@ if __name__ == "__main__":
     extracted_proxies = []
     servers_list = []
 
-    # 处理clash urls
+    # 处理clash meta urls
     process_urls('./urls/clash_meta_urls.txt', process_clash_meta)
 
     # 处理hysteria urls
@@ -319,9 +483,12 @@ if __name__ == "__main__":
     # 处理hysteria2 urls
     process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
 
+    # 处理Xray urls
+    process_urls('./urls/xray_urls.txt', process_xray)
+
     # logging.info(servers_list)
 
-    # 写入clash meta配置
+    # # 写入clash meta配置
     write_clash_meta_profile('./templates/clash_meta.yaml', './outputs/clash_meta.yaml', extracted_proxies)
     write_clash_meta_profile('./templates/clash_meta_warp.yaml', './outputs/clash_meta_warp.yaml', extracted_proxies)
 
