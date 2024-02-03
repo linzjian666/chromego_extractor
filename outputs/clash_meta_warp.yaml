@@ -30,89 +30,32 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇫🇷 FR-vless | 0-1
-  type: vless
-  server: 51.159.103.141
-  port: 12207
-  udp: true
-  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
-  tls: true
-  servername: s0.awsstatic.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 0-2
-  type: vless
+- name: 🇺🇸 US-tuic | 0-1
+  type: tuic
   server: 109.104.152.4
-  port: 16414
+  port: 443
   udp: true
-  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
-  tls: true
-  servername: mensura.cdn-apple.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 0-3
-  type: vless
-  server: 108.181.5.130
-  port: 20221
-  udp: true
-  uuid: 8eb74635-0857-4673-9965-f6d928b420c9
-  tls: true
-  servername: www.lovelive-anime.jp
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: abc-YDOgV8WkuXRT9bJH-N_E6LaLJ9_7Sfc5OGajaSU
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 🇫🇷 FR-ssr | 1-1
-  type: ssr
-  server: 62.210.103.14
-  port: 33333
+  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
   password: dongtaiwang.com
-  cipher: dummy
-  obfs: plain
-  protocol: auth_chain_a
-- name: 🇺🇸 US-ssr | 2-1
-  type: ssr
-  server: 108.181.2.157
-  port: 22222
-  password: dongtaiwang.com
-  cipher: dummy
-  obfs: plain
-  protocol: auth_chain_a
-- name: 🇺🇸 US-hysteria | 3-1
-  type: hysteria
-  server: 108.181.5.20
-  port: 22881
-  auth-str: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
-- name: 🇺🇸 US-vless | 4-1
-  type: vless
-  server: 108.181.2.156
-  port: 19695
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇫🇷 FR-tuic | 1-1
+  type: tuic
+  server: 62.210.103.14
+  port: 44556
   udp: true
-  uuid: 906d367a-a5d2-467c-b476-a29c79215003
-  tls: true
-  servername: lol.secure.dyn.riotcdn.net
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: TETJrb4V6VlHpITM8jXZjFsh1bUav4iPuSVDMjUBVyo
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 🇨🇳 TW-hysteria | 6-1
   type: hysteria
   server: www2.dtku48.xyz
@@ -263,13 +206,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -289,13 +227,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -315,13 +248,8 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -341,13 +269,8 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -367,13 +290,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -393,13 +311,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -419,13 +332,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -445,13 +353,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -471,13 +374,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -497,13 +395,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -523,13 +416,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -549,13 +437,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -575,13 +458,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -601,13 +479,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
@@ -636,13 +509,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-vless | 0-3
-  - 🇫🇷 FR-ssr | 1-1
-  - 🇺🇸 US-ssr | 2-1
-  - 🇺🇸 US-hysteria | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 0-1
+  - 🇫🇷 FR-tuic | 1-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
   - 🇺🇸 US-hysteria2 | 8-1
