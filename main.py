@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-02-02 11:09:40
+LastEditTime: 2024-02-04 16:37:18
 '''
 import yaml
 import json
@@ -214,6 +214,8 @@ def process_xray(data, index):
                 short_id = realitySettings.get("shortId", "")
                 publicKey = realitySettings["publicKey"]
                 fingerprint = realitySettings["fingerprint"]
+                
+                grpc_serviceName = pending_proxy["streamSettings"].get("grpcSettings", {}).get("serviceName", "/")
                 proxy = {
                     "name": name,
                     "type": "vless",
@@ -235,6 +237,9 @@ def process_xray(data, index):
                 }
             else:
                 if(network in ["tcp", "ws", "grpc"]):
+                    sni = pending_proxy["streamSettings"].get("tlsSettings", {}).get("serverName", "")
+                    allowInsecure = pending_proxy["streamSettings"].get("tlsSettings", {}).get("allowInsecure", False)
+
                     ws_path = pending_proxy["streamSettings"].get("wsSettings", {}).get("path", "")
                     ws_headers = pending_proxy["streamSettings"].get("wsSettings", {}).get("headers", {})
                     grpc_serviceName = pending_proxy["streamSettings"].get("grpcSettings", {}).get("serviceName", "/")

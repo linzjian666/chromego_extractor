@@ -11,3 +11,4 @@ hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺
 hysteria2://dongtaiwang.com@62.210.103.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 2-0
 hysteria2://dongtaiwang.com@108.181.24.77:43656/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 3-0
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGViXHVkODNjXHVkZGY3IEZSLXZtZXNzIHwgMC0wIiwgImFkZCI6ICI2Mi4yMTAuMTAwLjIzNSIsICJwb3J0IjogMjAxMzgsICJpZCI6ICIzZGUzZmQ1Ni1jYzlmLTQyYmMtYTdlMy02MDhjODk5MGM3NWYiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICIiLCAic25pIjogIiIsICJhbHBuIjogIiJ9
+vless://9cc39477-0d85-4419-84d4-fb7fc77668b3@108.181.22.213:28945?encryption=none&flow=xtls-rprx-vision&security=reality&sni=m.media-amazon.com&fp=chrome&pbk=yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0&sid=6ba85179e30d4fc2&type=tcp&serviceName=/&host=&path=#🇺🇸 US-vless | 1-0
