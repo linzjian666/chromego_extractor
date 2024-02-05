@@ -87,16 +87,6 @@ proxies:
   password: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
-- name: 🇺🇸 US-hysteria2 | 8-1
-  type: hysteria2
-  server: 45.150.165.84
-  port: 8881
-  password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  obfs: salamander
-  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  skip-cert-verify: true
-  up: 2 Mbps
-  down: 10 Mbps
 - name: 🇨🇳 TW-hysteria | 9-1
   type: hysteria
   server: www.dtku50.xyz
@@ -239,7 +229,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -262,7 +251,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -285,7 +273,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -308,7 +295,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -331,7 +317,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -354,7 +339,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -377,7 +361,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -400,7 +383,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -423,7 +405,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -446,7 +427,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -469,7 +449,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -492,7 +471,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -515,7 +493,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -538,7 +515,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -570,7 +546,6 @@ proxy-groups:
   - 🇳🇱 NL-tuic | 2-1
   - 🇨🇳 TW-hysteria | 6-1
   - 🇫🇷 FR-hysteria2 | 7-1
-  - 🇺🇸 US-hysteria2 | 8-1
   - 🇨🇳 TW-hysteria | 9-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
