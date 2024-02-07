@@ -1,6 +1,5 @@
-tuic://0d9d053c-81c8-4f26-9b5c-dff313dfdd70:dongtaiwang.com@62.210.103.14:44556/?congestion_controller=bbr&udp_relay_mode=native&sni=&alpn=h3&allow_insecure=1&disable_sni=1#🇫🇷 FR-tuic | 0-1
-tuic://9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913:dongtaiwang.com@109.104.152.4:443/?congestion_controller=bbr&udp_relay_mode=native&sni=&alpn=h3&allow_insecure=1&disable_sni=1#🇺🇸 US-tuic | 1-1
-tuic://364d2d85-5bfd-463f-a3dd-a08012a2a6ce:dongtaiwang.com@109.104.153.17:22334/?congestion_controller=bbr&udp_relay_mode=native&sni=&alpn=h3&allow_insecure=1&disable_sni=1#🇳🇱 NL-tuic | 2-1
+tuic://983a85bd-8fae-45d2-a702-5d00a383763e:dongtaiwang.com@195.137.220.189:33445/?congestion_controller=bbr&udp_relay_mode=native&sni=&alpn=h3&allow_insecure=1&disable_sni=1#🇺🇸 US-tuic | 0-1
+tuic://9a6140f4-abd8-4ece-aa0e-4f14556de56b:dongtaiwang.com@74.63.249.229:443/?congestion_controller=bbr&udp_relay_mode=native&sni=&alpn=h3&allow_insecure=1&disable_sni=1#🇺🇸 US-tuic | 1-1
 hysteria://www2.dtku48.xyz:22334/?protocol=udp&insecure=1&peer=&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇨🇳 TW-hysteria | 6-1
 hysteria2://dongtaiwang.com@51.158.54.46:44550/?sni=bing.com&insecure=1#🇫🇷 FR-hysteria2 | 7-1
 hysteria://www.dtku50.xyz:18470/?protocol=udp&insecure=1&peer=www.amazon.cn&auth=dongtaiwang.com&upmbps=2&downmbps=10&alpn=h3&obfs=#🇨🇳 TW-hysteria | 9-1
@@ -8,9 +7,8 @@ hysteria://51.158.54.46:55396/?protocol=udp&insecure=1&peer=youku.com&auth=dongt
 hysteria://173.234.25.52:30072/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 1-0
 hysteria://108.181.22.239:39967/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 2-0
 hysteria://167.160.91.115:41189/?protocol=udp&insecure=1&peer=www.amazon.cn&auth=bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 3-0
-hysteria2://dongtaiwang.com@62.210.101.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@62.210.103.0:22483/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@64.110.25.11:33337/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 1-0
-hysteria2://dongtaiwang.com@62.210.103.0:52465/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 2-0
 hysteria2://dongtaiwang.com@108.181.24.77:43656/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 3-0
-vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGViXHVkODNjXHVkZGY3IEZSLXZtZXNzIHwgMC0wIiwgImFkZCI6ICI2Mi4yMTAuMTAwLjIzNSIsICJwb3J0IjogMjAxMzgsICJpZCI6ICIzZGUzZmQ1Ni1jYzlmLTQyYmMtYTdlMy02MDhjODk5MGM3NWYiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICIiLCAic25pIjogIiIsICJhbHBuIjogIiJ9
+vless://e659661d-8439-46e0-b1ab-d75ceaf73404@62.210.101.0:18700?encryption=none&flow=xtls-rprx-vision&security=reality&sni=update.microsoft&fp=chrome&pbk=PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw&sid=6ba85179e30d4fc2&type=tcp&serviceName=/&host=&path=#🇫🇷 FR-vless | 0-0
 vless://9cc39477-0d85-4419-84d4-fb7fc77668b3@108.181.22.213:28945?encryption=none&flow=xtls-rprx-vision&security=reality&sni=m.media-amazon.com&fp=chrome&pbk=yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0&sid=6ba85179e30d4fc2&type=tcp&serviceName=/&host=&path=#🇺🇸 US-vless | 1-0
