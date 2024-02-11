@@ -30,18 +30,24 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇺🇸 US-ss | 0-1
-  type: ss
+- name: 🇺🇸 US-vless | 0-1
+  type: vless
+  server: 108.181.5.18
+  port: 22222
+  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
+  tls: false
+  network: tcp
+- name: 🇺🇸 US-vmess | 0-2
+  type: vmess
   server: 109.104.152.144
-  port: 111
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
-- name: 🇨🇳 CN-ss | 0-2
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27103
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
+  port: 12300
+  cipher: auto
+  uuid: 4be33771-099d-4d65-9426-09bed47eb41f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: tcp
 - name: 🇨🇳 CN-ss | 0-3
   type: ss
   server: yd.qianggewangluo.buzz
@@ -189,6 +195,20 @@ proxies:
   port: 27102
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
+- name: 🇺🇸 US-vless | 4-1
+  type: vless
+  server: 109.104.152.101
+  port: 11111
+  udp: true
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  tls: true
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: 🏳 Unknown-vless | 5-1
   type: vless
   server: 198.41.193.226
@@ -1972,8 +1992,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -1994,6 +2014,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2149,8 +2170,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -2171,6 +2192,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2326,8 +2348,8 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -2348,6 +2370,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2503,8 +2526,8 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -2525,6 +2548,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2680,8 +2704,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -2702,6 +2726,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2857,8 +2882,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -2879,6 +2904,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3034,8 +3060,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3056,6 +3082,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3211,8 +3238,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3233,6 +3260,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3388,8 +3416,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3410,6 +3438,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3565,8 +3594,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3587,6 +3616,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3742,8 +3772,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3764,6 +3794,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3919,8 +3950,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -3941,6 +3972,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -4096,8 +4128,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -4118,6 +4150,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -4273,8 +4306,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -4295,6 +4328,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -4459,8 +4493,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-ss | 0-1
-  - 🇨🇳 CN-ss | 0-2
+  - 🇺🇸 US-vless | 0-1
+  - 🇺🇸 US-vmess | 0-2
   - 🇨🇳 CN-ss | 0-3
   - 🇨🇳 CN-ss | 0-4
   - 🇨🇳 CN-ss | 0-5
@@ -4481,6 +4515,7 @@ proxy-groups:
   - 🇨🇳 CN-ss | 1-10
   - 🇨🇳 CN-ss | 1-11
   - 🇨🇳 CN-ss | 1-12
+  - 🇺🇸 US-vless | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
