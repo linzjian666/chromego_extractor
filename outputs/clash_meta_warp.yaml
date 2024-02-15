@@ -41,6 +41,17 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇺🇸 US-hysteria2 | 0-2
+  type: hysteria2
+  server: 109.104.152.144
+  port: 51100
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇺🇸 US-tuic | 1-1
   type: tuic
   server: 109.104.152.144
@@ -54,18 +65,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇺🇸 US-hysteria | 2-1
-  type: hysteria
+- name: 🇺🇸 US-tuic | 2-1
+  type: tuic
   server: 109.104.152.101
-  port: 32200
-  sni: bing.com
-  skip-cert-verify: true
+  port: 31102
+  udp: true
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 🇺🇸 US-tuic | 3-1
   type: tuic
   server: 109.104.152.101
@@ -79,20 +91,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇺🇸 US-vless | 4-1
-  type: vless
+- name: 🇺🇸 US-tuic | 4-1
+  type: tuic
   server: 109.104.152.101
-  port: 11111
+  port: 31101
   udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 🏳 Unknown-vless | 5-1
   type: vless
   server: 198.41.193.226
@@ -1896,10 +1907,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2057,10 +2069,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2218,10 +2231,11 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2379,10 +2393,11 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2540,10 +2555,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2701,10 +2717,11 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2862,10 +2879,11 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3023,10 +3041,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3184,10 +3203,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3345,10 +3365,11 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3506,10 +3527,11 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3667,10 +3689,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3828,10 +3851,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3989,10 +4013,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -4159,10 +4184,11 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
   - 🇺🇸 US-tuic | 1-1
-  - 🇺🇸 US-hysteria | 2-1
+  - 🇺🇸 US-tuic | 2-1
   - 🇺🇸 US-tuic | 3-1
-  - 🇺🇸 US-vless | 4-1
+  - 🇺🇸 US-tuic | 4-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
