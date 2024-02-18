@@ -30,22 +30,29 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇺🇸 US-vless | 0-1
-  type: vless
-  server: 64.31.55.30
-  port: 33220
-  udp: true
-  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
-  tls: true
-  servername: www.lovelive-anime.jp
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 🇺🇸 US-vless | 0-2
+- name: 🇺🇸 US-hysteria2 | 0-1
+  type: hysteria2
+  server: 208.115.243.45
+  port: 30010
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 US-hysteria2 | 0-2
+  type: hysteria2
+  server: 109.104.152.171
+  port: 20011
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 US-vless | 3-1
   type: vless
   server: 108.181.5.130
   port: 19910
@@ -59,17 +66,6 @@ proxies:
     public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: 🇺🇸 US-hysteria2 | 1-1
-  type: hysteria2
-  server: 109.104.152.242
-  port: 1022
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: 🏳 Unknown-vless | 5-1
   type: vless
   server: 198.41.193.226
@@ -1876,9 +1872,9 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2035,9 +2031,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2194,9 +2190,9 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2353,9 +2349,9 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2512,9 +2508,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2671,9 +2667,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2830,9 +2826,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -2989,9 +2985,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3148,9 +3144,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3307,9 +3303,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3466,9 +3462,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3625,9 +3621,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3784,9 +3780,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -3943,9 +3939,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
@@ -4111,9 +4107,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
-  - 🇺🇸 US-vless | 0-2
-  - 🇺🇸 US-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria2 | 0-1
+  - 🇺🇸 US-hysteria2 | 0-2
+  - 🇺🇸 US-vless | 3-1
   - 🏳 Unknown-vless | 5-1
   - 🏳 Unknown-vless | 5-2
   - 🇺🇸 US-vless | 5-3
