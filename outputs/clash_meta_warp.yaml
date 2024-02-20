@@ -30,19 +30,66 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇺🇸 US-vless | 0-1
-  type: vless
-  server: 64.31.55.42
-  port: 23514
-  udp: true
-  uuid: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: ew6CB407JaI_WVD7QlD5QuvJTD7Pbv1oEbtis35-MRM
-  client-fingerprint: chrome
+- name: 🇨🇦 CA-vmess | 0-1
+  type: vmess
+  server: 23.227.38.11
+  port: 8080
+  cipher: auto
+  uuid: 9084653a-ee34-4293-979e-7c2b50dffb84
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: configured-creek-relating-theater.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9084653a-ee34-4293-979e-7c2b50dffb84-vm
+    headers:
+      host: configured-creek-relating-theater.trycloudflare.com
+- name: 🇨🇦 CA-vmess | 0-2
+  type: vmess
+  server: 23.227.38.22
+  port: 8080
+  cipher: auto
+  uuid: ac750859-79e7-4507-ba93-e92584ac49e3
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ac750859-79e7-4507-ba93-e92584ac49e3-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: 🇨🇦 CA-vmess | 0-3
+  type: vmess
+  server: 23.227.38.23
+  port: 8080
+  cipher: auto
+  uuid: 5f7934bf-a228-49a7-9572-5ce4377c34d5
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 5f7934bf-a228-49a7-9572-5ce4377c34d5-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: 🇨🇦 CA-vmess | 0-4
+  type: vmess
+  server: 23.227.38.44
+  port: 8080
+  cipher: auto
+  uuid: 0e5da13a-b148-4889-9d72-ad1d9d5aa9ad
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 0e5da13a-b148-4889-9d72-ad1d9d5aa9ad-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
 - name: 🏳 Unknown-vmess | 1-1
   type: vmess
   server: 198.41.223.64
@@ -10918,7 +10965,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -11675,7 +11725,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -12432,7 +12485,10 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -13189,7 +13245,10 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -13946,7 +14005,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -14703,7 +14765,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -15460,7 +15525,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -16217,7 +16285,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -16974,7 +17045,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -17731,7 +17805,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -18488,7 +18565,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -19245,7 +19325,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -20002,7 +20085,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -20759,7 +20845,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
@@ -21525,7 +21614,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇺🇸 US-vless | 0-1
+  - 🇨🇦 CA-vmess | 0-1
+  - 🇨🇦 CA-vmess | 0-2
+  - 🇨🇦 CA-vmess | 0-3
+  - 🇨🇦 CA-vmess | 0-4
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 1-3
