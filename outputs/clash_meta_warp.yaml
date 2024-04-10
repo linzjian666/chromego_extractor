@@ -43,7 +43,7 @@ proxies:
   down: 20 Mbps
 - name: 🏳 Unknown-vmess | 1-1
   type: vmess
-  server: fbi.gov
+  server: 104.19.58.60
   port: 8080
   cipher: auto
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -71,7 +71,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: hang-broke-john-neither.trycloudflare.com
-- name: 🇫🇷 FR-vmess | 1-3
+- name: 🏳 Unknown-vmess | 1-3
   type: vmess
   server: yh4.dtku41.xyz
   port: 8080
@@ -88,7 +88,7 @@ proxies:
       host: booty-pensions-scheduling-blogging.trycloudflare.com
 - name: 🏳 Unknown-vmess | 1-4
   type: vmess
-  server: yh5.dtku41.xyz
+  server: 104.20.26.40
   port: 8080
   cipher: auto
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -101,362 +101,48 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
     headers:
       host: fantastic-doe-bids-ended.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-1
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-2
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-3
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: nest-emily-healing-h.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-4
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: larger-marketing-amounts-skin.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-    headers:
-      host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-5
-  type: vmess
-  server: yh2.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-6
-  type: vmess
-  server: yh2.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: nest-emily-healing-h.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-7
-  type: vmess
-  server: yh2.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-8
-  type: vmess
-  server: yh3.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: larger-marketing-amounts-skin.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-    headers:
-      host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-9
-  type: vmess
-  server: yh3.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-10
-  type: vmess
-  server: yh3.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: nest-emily-healing-h.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-- name: 🇺🇸 US-vmess | 2-11
-  type: vmess
-  server: yh3.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-- name: 🏳 Unknown-vmess | 3-1
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: uh-lawyers-instruments-kernel.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-    headers:
-      host: uh-lawyers-instruments-kernel.trycloudflare.com
-- name: 🇺🇸 US-vmess | 3-2
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: per-essex-patterns-bowling.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-    headers:
-      host: per-essex-patterns-bowling.trycloudflare.com
-- name: 🏳 Unknown-vmess | 3-3
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: technological-mel-fill-decide.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-    headers:
-      host: technological-mel-fill-decide.trycloudflare.com
-- name: 🏳 Unknown-vmess | 3-4
-  type: vmess
-  server: yh1.freeh1.xyz
-  port: 8080
-  cipher: auto
-  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
-    headers:
-      host: widescreen-instruction-breakdown-postage.trycloudflare.com
-- name: 🇨🇦 CA-vmess | 4-1
-  type: vmess
-  server: 23.227.39.12
-  port: 8080
-  cipher: auto
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: uh-lawyers-instruments-kernel.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-    headers:
-      host: uh-lawyers-instruments-kernel.trycloudflare.com
-- name: 🇨🇦 CA-vmess | 4-2
-  type: vmess
-  server: 23.227.39.24
-  port: 8080
-  cipher: auto
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: per-essex-patterns-bowling.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-    headers:
-      host: per-essex-patterns-bowling.trycloudflare.com
-- name: 🇨🇦 CA-vmess | 4-3
-  type: vmess
-  server: 23.227.39.23
-  port: 8080
-  cipher: auto
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: technological-mel-fill-decide.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-    headers:
-      host: technological-mel-fill-decide.trycloudflare.com
-- name: 🇨🇦 CA-vmess | 4-4
-  type: vmess
-  server: 23.227.39.45
-  port: 8080
-  cipher: auto
-  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
-    headers:
-      host: widescreen-instruction-breakdown-postage.trycloudflare.com
-- name: 🏳 Unknown-vmess | 5-1
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: pcs-referenced-camera-concerns.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-- name: 🏳 Unknown-vmess | 5-2
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 🏳 Unknown-vmess | 5-3
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: nest-emily-healing-h.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-    headers:
-      host: nest-emily-healing-h.trycloudflare.com
-- name: 🏳 Unknown-vmess | 5-4
-  type: vmess
-  server: fbi.gov
-  port: 8080
-  cipher: auto
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: larger-marketing-amounts-skin.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-    headers:
-      host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 🇨🇳 TW-hysteria | 6-1
-  type: hysteria
-  server: www2.dtku48.xyz
-  port: 22334
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: true
+- name: 🇺🇸 US-vless | 2-1
+  type: vless
+  server: 109.104.152.101
+  port: 13982
+  uuid: 85beb960-236b-4634-81ce-6ad66652f928
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
+    short-id: 22f6b74f02cc88a6
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
+- name: 🇺🇸 US-ss | 6-1
+  type: ss
+  server: 109.104.152.186
+  port: 11223
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
 - name: 🇺🇸 US-hysteria2 | 7-1
   type: hysteria2
   server: 109.104.152.89
@@ -468,29 +154,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-ss | 8-1
-  type: ss
-  server: 62.204.54.81
-  port: 44550
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
-    version: 3
-- name: 🇨🇳 TW-hysteria | 9-1
-  type: hysteria
-  server: www.dtku50.xyz
-  port: 18470
-  sni: www.amazon.cn
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 2
-  down: 10
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 108.181.5.133
@@ -600,7 +263,7 @@ proxies:
     serviceName: /
 - name: 🏳 Unknown-vless | 3-0
   type: vless
-  server: fbi.gov
+  server: 104.26.1.40
   port: 443
   uuid: ebfdccb6-7416-4b6e-860d-98587344d500
   tls: true
@@ -623,35 +286,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -671,35 +310,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -719,35 +334,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -767,35 +358,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -815,35 +382,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -863,35 +406,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -911,35 +430,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -959,35 +454,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1007,35 +478,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1055,35 +502,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1103,35 +526,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1151,35 +550,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1199,35 +574,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1247,35 +598,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
@@ -1304,35 +631,11 @@ proxy-groups:
   - 🇺🇸 US-hysteria2 | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
-  - 🇫🇷 FR-vmess | 1-3
+  - 🏳 Unknown-vmess | 1-3
   - 🏳 Unknown-vmess | 1-4
-  - 🏳 Unknown-vmess | 2-1
-  - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
-  - 🏳 Unknown-vmess | 2-4
-  - 🏳 Unknown-vmess | 2-5
-  - 🇺🇸 US-vmess | 2-6
-  - 🏳 Unknown-vmess | 2-7
-  - 🇺🇸 US-vmess | 2-8
-  - 🇺🇸 US-vmess | 2-9
-  - 🇺🇸 US-vmess | 2-10
-  - 🇺🇸 US-vmess | 2-11
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🏳 Unknown-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
-  - 🇨🇦 CA-vmess | 4-1
-  - 🇨🇦 CA-vmess | 4-2
-  - 🇨🇦 CA-vmess | 4-3
-  - 🇨🇦 CA-vmess | 4-4
-  - 🏳 Unknown-vmess | 5-1
-  - 🏳 Unknown-vmess | 5-2
-  - 🏳 Unknown-vmess | 5-3
-  - 🏳 Unknown-vmess | 5-4
-  - 🇨🇳 TW-hysteria | 6-1
+  - 🇺🇸 US-vless | 2-1
+  - 🇺🇸 US-ss | 6-1
   - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-ss | 8-1
-  - 🇨🇳 TW-hysteria | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇨🇳 TW-Hysteria | 2-0
