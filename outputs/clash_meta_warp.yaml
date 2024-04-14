@@ -43,7 +43,7 @@ proxies:
   down: 20 Mbps
 - name: 🏳 Unknown-vmess | 1-1
   type: vmess
-  server: 104.19.58.60
+  server: yh7.dtku41.xy
   port: 8080
   cipher: auto
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -58,7 +58,7 @@ proxies:
       host: concentrations-taxi-about-recognised.trycloudflare.com
 - name: 🇺🇸 US-vmess | 1-2
   type: vmess
-  server: yh1.dtku41.xyz
+  server: yh9.dtku41.xyz
   port: 8080
   cipher: auto
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -73,7 +73,7 @@ proxies:
       host: hang-broke-john-neither.trycloudflare.com
 - name: 🇺🇸 US-vmess | 1-3
   type: vmess
-  server: yh7.dtku41.xyz
+  server: yh3.dtku41.xyz
   port: 8080
   cipher: auto
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -88,7 +88,7 @@ proxies:
       host: booty-pensions-scheduling-blogging.trycloudflare.com
 - name: 🏳 Unknown-vmess | 1-4
   type: vmess
-  server: 104.20.26.40
+  server: yh6.dtku41.xy
   port: 8080
   cipher: auto
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -212,37 +212,37 @@ proxies:
   skip-cert-verify: true
 - name: 🇺🇸 US-vless | 1-0
   type: vless
+  server: yh3.dtku41.xyz
+  port: 443
+  uuid: ebfdccb6-7416-4b6e-860d-98587344d500
+  tls: true
+  servername: lg1.freessr2.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /xyakws
+    headers:
+      Host: lg1.freessr2.xyz
+  grpc-opts:
+    serviceName: /
+- name: 🇺🇸 US-vless | 2-0
+  type: vless
+  server: yh9.dtku41.xyz
+  port: 443
+  uuid: ebfdccb6-7416-4b6e-860d-98587344d500
+  tls: true
+  servername: lg1.freessr2.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /xyakws
+    headers:
+      Host: lg1.freessr2.xyz
+  grpc-opts:
+    serviceName: /
+- name: 🇺🇸 US-vless | 3-0
+  type: vless
   server: yh7.dtku41.xyz
-  port: 443
-  uuid: ebfdccb6-7416-4b6e-860d-98587344d500
-  tls: true
-  servername: lg1.freessr2.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /xyakws
-    headers:
-      Host: lg1.freessr2.xyz
-  grpc-opts:
-    serviceName: /
-- name: 🏳 Unknown-vless | 2-0
-  type: vless
-  server: 104.19.58.80
-  port: 443
-  uuid: ebfdccb6-7416-4b6e-860d-98587344d500
-  tls: true
-  servername: lg1.freessr2.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /xyakws
-    headers:
-      Host: lg1.freessr2.xyz
-  grpc-opts:
-    serviceName: /
-- name: 🏳 Unknown-vless | 3-0
-  type: vless
-  server: 104.26.1.40
   port: 443
   uuid: ebfdccb6-7416-4b6e-860d-98587344d500
   tls: true
@@ -276,8 +276,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -298,8 +298,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -320,8 +320,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -342,8 +342,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -364,8 +364,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -386,8 +386,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -408,8 +408,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -430,8 +430,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -452,8 +452,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -474,8 +474,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -496,8 +496,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -518,8 +518,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -540,8 +540,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -562,8 +562,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -593,8 +593,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
