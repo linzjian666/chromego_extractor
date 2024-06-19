@@ -6,5 +6,5 @@ vless://85beb960-236b-4634-81ce-6ad66652f928@109.104.152.101:13982?encryption=no
 hysteria://62.210.243.131:18702/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
 hysteria2://dongtaiwang.com@104.192.224.141:36252/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
 vless://ebfdccb6-7416-4b6e-860d-98587344d500@yh4.dtku41.xyz:443?encryption=none&flow=&security=tls&sni=lg1.freessr2.xyz&fp=&insecure=0&type=ws&serviceName=&host=&path=/xyakws#🏳 Unknown-vless | 1-0
-vless://ebfdccb6-7416-4b6e-860d-98587344d500@yh1.dtku41.xyz:443?encryption=none&flow=&security=tls&sni=lg1.freessr2.xyz&fp=&insecure=0&type=ws&serviceName=&host=&path=/xyakws#🇺🇸 US-vless | 2-0
-vless://ebfdccb6-7416-4b6e-860d-98587344d500@yh7.dtku41.xyz:443?encryption=none&flow=&security=tls&sni=lg1.freessr2.xyz&fp=&insecure=0&type=ws&serviceName=&host=&path=/xyakws#🇺🇸 US-vless | 3-0
+vless://ebfdccb6-7416-4b6e-860d-98587344d500@yh1.dtku41.xyz:443?encryption=none&flow=&security=tls&sni=lg1.freessr2.xyz&fp=&insecure=0&type=ws&serviceName=&host=&path=/xyakws#🏳 Unknown-vless | 2-0
+vless://ebfdccb6-7416-4b6e-860d-98587344d500@yh7.dtku41.xyz:443?encryption=none&flow=&security=tls&sni=lg1.freessr2.xyz&fp=&insecure=0&type=ws&serviceName=&host=&path=/xyakws#🏳 Unknown-vless | 3-0
