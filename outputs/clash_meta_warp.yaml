@@ -30,66 +30,6 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-vmess | 3-1
-  type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: 🇺🇸 US-vmess | 3-2
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: 🇨🇦 CA-vmess | 3-3
-  type: vmess
-  server: 23.227.38.7
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: 🏳 Unknown-vmess | 3-4
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
 - name: 🇺🇸 US-vless | 5-1
   type: vless
   server: 109.104.152.101
@@ -199,10 +139,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -216,10 +152,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -233,10 +165,6 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -250,10 +178,6 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -267,10 +191,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -284,10 +204,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -301,10 +217,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -318,10 +230,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -335,10 +243,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -352,10 +256,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -369,10 +269,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -386,10 +282,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -403,10 +295,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -420,10 +308,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
@@ -446,10 +330,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 3-1
-  - 🇺🇸 US-vmess | 3-2
-  - 🇨🇦 CA-vmess | 3-3
-  - 🏳 Unknown-vmess | 3-4
   - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-tuic | 6-1
   - 🇫🇷 FR-Hysteria | 0-0
