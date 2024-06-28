@@ -11,42 +11,17 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇺🇸 US-vless | 5-1
-  type: vless
-  server: 109.104.152.101
-  port: 13982
-  uuid: 85beb960-236b-4634-81ce-6ad66652f928
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
-    short-id: 22f6b74f02cc88a6
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
-- name: 🇺🇸 US-tuic | 6-1
-  server: 109.104.152.186
-  port: 44550
-  type: tuic
-  uuid: 760d4891-63ab-40db-98c7-1219ae1b92df
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: 🏳 Unknown-ss | 5-1
+  type: ss
+  server: 23.170.40.77
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CmUP/cj9LY2W4bsBUV7mG8ujmMcCOzt+b4un9xnLuro=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
+    version: 3
 - name: 🇫🇷 FR-Hysteria | 0-0
   type: hysteria
   server: 62.210.243.131
@@ -88,7 +63,7 @@ proxies:
   h2-opts:
     path: /
     host: []
-- name: 🇺🇸 US-vmess | 2-0
+- name: 🏳 Unknown-vmess | 2-0
   type: vmess
   server: yh1.dtku41.xyz
   port: 2082
@@ -108,7 +83,7 @@ proxies:
   h2-opts:
     path: /
     host: []
-- name: 🇺🇸 US-vmess | 3-0
+- name: 🏳 Unknown-vmess | 3-0
   type: vmess
   server: yh7.dtku41.xyz
   port: 2082
@@ -134,146 +109,134 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -288,13 +251,12 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
-  - 🇺🇸 US-tuic | 6-1
+  - 🏳 Unknown-ss | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🇺🇸 US-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
