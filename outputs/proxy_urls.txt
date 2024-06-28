@@ -1,3 +1,4 @@
+hysteria://23.170.40.77:30009/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=11&downmbps=55&alpn=h3&obfs=#🏳 Unknown-hysteria | 9-1
 hysteria://62.210.243.131:18702/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
 hysteria2://dongtaiwang.com@104.192.224.141:36252/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAxLTAiLCAiYWRkIjogInloNC5kdGt1NDEueHl6IiwgInBvcnQiOiAyMDgyLCAiaWQiOiAiODZlOTI2YjktZDY3YS00YzhmLWEzNWUtMDI0NjMxODM4YTQ1IiwgImFpZCI6IDAsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiZ2l0aHViLmNvbS9BbHZpbjk5OTkiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=
