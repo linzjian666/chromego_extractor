@@ -41,12 +41,6 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
-- name: 🇫🇷 FR-ss | 6-1
-  type: ss
-  server: 51.159.2.179
-  port: 22335
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZpEonUDV3FRJbttewYtp9sH8hQdIFqqYIyTrVOegzs=
 - name: 🇨🇳 TW-ss | 8-1
   server: www2.dtku44.xyz
   type: ss
@@ -58,36 +52,25 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: 🇫🇷 FR-ss | 9-1
-  type: ss
-  server: 51.159.2.179
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
-    version: 3
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth-str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 🇺🇸 US-Hysteria | 3-0
   type: hysteria
   server: 166.1.18.52
-  port: 41363
-  ports: 41363
+  port: 10295
+  ports: 20000-30000
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -100,37 +83,32 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 38.114.103.210
-  port: 30647
+  port: 26288
   password: dongtaiwang.com
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇺🇸 US-Hysteria2 | 1-0
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🏳 Unknown-vmess | 0-0
-  type: vmess
-  server: 104.19.32.188
-  port: 2082
-  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: ''
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip2-2.freessr2.xyz
+- name: 🇫🇷 FR-vless | 0-0
+  type: vless
+  server: 62.210.101.0
+  port: 23357
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  network: tcp
+  client-fingerprint: chrome
   grpc-opts:
-    serviceName: /
-  h2-opts:
-    path: /
-    host: []
+    grpc-service-name: /
+  reality-opts:
+    public-key: U5hsLybYWhJrWAqqsTa052k-VeKt8bDFPxBh3CQk51M
+    short-id: 0b4badde
 - name: 🏳 Unknown-vmess | 1-0
   type: vmess
   server: 162.159.140.19
@@ -199,14 +177,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -217,14 +193,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -235,14 +209,12 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -253,14 +225,12 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -271,14 +241,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -289,14 +257,12 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -307,14 +273,12 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -325,14 +289,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -343,14 +305,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -361,14 +321,12 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -379,14 +337,12 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -397,14 +353,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -415,14 +369,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -433,14 +385,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -460,14 +410,12 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🏳 Unknown-ss | 5-1
-  - 🇫🇷 FR-ss | 6-1
   - 🇨🇳 TW-ss | 8-1
-  - 🇫🇷 FR-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 3-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
