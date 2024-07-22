@@ -82,11 +82,11 @@ proxies:
   - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
-  server: 173.234.31.99
-  port: 56549
+  server: hy3.3124845.xyz
+  port: 443
   password: dongtaiwang.com
-  sni: ''
-  skip-cert-verify: true
+  sni: hy3.3124845.xyz
+  skip-cert-verify: false
 - name: 🇫🇷 FR-vless | 0-0
   type: vless
   server: 62.210.101.0
