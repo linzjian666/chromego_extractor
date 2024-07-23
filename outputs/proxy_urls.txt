@@ -1,5 +1,4 @@
-hysteria://208.87.243.123:31476/?protocol=udp&insecure=1&peer=wechat.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 0-0
-hysteria://166.1.18.52:10295/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 3-0
+hysteria://38.135.52.192:23456/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 0-0
 hysteria2://dongtaiwang.com@hy3.3124845.xyz:443/?sni=hy3.3124845.xyz&insecure=0#🇺🇸 US-Hysteria2 | 0-0
 vless://e9e3cc13-db48-4cc1-8c24-7626439a5339@62.210.101.0:23357?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=U5hsLybYWhJrWAqqsTa052k-VeKt8bDFPxBh3CQk51M&sid=0b4badde&type=tcp&serviceName=/&host=&path=#🇫🇷 FR-vless | 0-0
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAxLTAiLCAiYWRkIjogIjEwNC4yNi4zLjEyIiwgInBvcnQiOiAyMDgyLCAiaWQiOiAiODZlOTI2YjktZDY3YS00YzhmLWEzNWUtMDI0NjMxODM4YTQ1IiwgImFpZCI6IDAsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiZ2l0aHViLmNvbS9BbHZpbjk5OTkiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=
