@@ -35,9 +35,9 @@ proxies:
     version: 3
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
-  server: 38.135.52.192
-  port: 23456
-  ports: 23456
+  server: 104.166.125.163
+  port: 11001
+  ports: 11001
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -50,9 +50,9 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 207.90.239.157
-  port: 22334
+  port: 15669
   password: dongtaiwang.com
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
