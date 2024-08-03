@@ -149,7 +149,7 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 3-0
   type: vmess
-  server: 104.19.32.26
+  server: 104.19.143.111
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
