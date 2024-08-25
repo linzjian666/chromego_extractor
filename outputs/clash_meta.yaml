@@ -48,7 +48,7 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.19.32.33
+  server: 104.21.238.45
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
@@ -60,7 +60,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip2-2.freessr2.xyz
+      Host: xray1.2413762.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -80,7 +80,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip4-2.freessr2.xyz
+      Host: xray4.2413762.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -100,7 +100,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip3-2.freessr2.xyz
+      Host: xray3.2413762.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -120,7 +120,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip2-2.freessr2.xyz
+      Host: xray2.2413762.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
