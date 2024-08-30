@@ -42,7 +42,7 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 207.90.239.157
-  port: 15669
+  port: 3400
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
