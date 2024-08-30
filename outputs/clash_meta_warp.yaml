@@ -67,7 +67,7 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.21.238.45
+  server: 104.21.238.65
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
