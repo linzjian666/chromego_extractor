@@ -30,6 +30,20 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇺🇸 US-vless | 5-1
+  type: vless
+  server: 108.181.5.21
+  port: 56319
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: tSLtMh9ypKHKhszEhkSGKOG0wp4de5qt65hWNBz1cW0
+    short-id: 12a08916
+  client-fingerprint: chrome
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 91.149.239.23
@@ -152,6 +166,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -165,6 +180,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -178,6 +194,7 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -191,6 +208,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -204,6 +222,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -217,6 +236,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -230,6 +250,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -243,6 +264,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -256,6 +278,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -269,6 +292,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -282,6 +306,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -295,6 +320,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -308,6 +334,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -321,6 +348,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -343,6 +371,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
