@@ -48,19 +48,19 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.21.238.65
-  port: 2082
-  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
+  server: 104.21.238.111
+  port: 443
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
   alterId: 0
   cipher: auto
-  tls: false
-  servername: ''
+  tls: true
+  servername: ip1.589643.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: github.com/Alvin9999
+    path: dongtaiwang.com
     headers:
-      Host: xray1.2413762.xyz
+      Host: ip1.589643.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -68,19 +68,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 1-0
   type: vmess
-  server: 104.26.3.12
-  port: 2082
-  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
+  server: 104.21.238.114
+  port: 443
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
   alterId: 0
   cipher: auto
-  tls: false
-  servername: ''
+  tls: true
+  servername: ip1.589643.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: github.com/Alvin9999
+    path: dongtaiwang.com
     headers:
-      Host: xray4.2413762.xyz
+      Host: ip1.589643.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -88,19 +88,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 2-0
   type: vmess
-  server: 162.159.45.35
-  port: 2082
-  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
+  server: 104.21.238.113
+  port: 443
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
   alterId: 0
   cipher: auto
-  tls: false
-  servername: ''
+  tls: true
+  servername: ip1.589643.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: github.com/Alvin9999
+    path: dongtaiwang.com
     headers:
-      Host: xray3.2413762.xyz
+      Host: ip1.589643.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -108,19 +108,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 3-0
   type: vmess
-  server: 104.19.143.111
-  port: 2082
-  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
+  server: 104.21.238.112
+  port: 443
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
   alterId: 0
   cipher: auto
-  tls: false
-  servername: ''
+  tls: true
+  servername: ip1.589643.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: github.com/Alvin9999
+    path: dongtaiwang.com
     headers:
-      Host: xray2.2413762.xyz
+      Host: ip1.589643.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
