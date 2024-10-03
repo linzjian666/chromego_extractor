@@ -11,20 +11,6 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇺🇸 US-vless | 5-1
-  type: vless
-  server: 108.181.5.21
-  port: 56319
-  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: tSLtMh9ypKHKhszEhkSGKOG0wp4de5qt65hWNBz1cW0
-    short-id: 12a08916
-  client-fingerprint: chrome
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 91.149.239.23
@@ -62,19 +48,19 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.21.238.111
+  server: 104.21.238.35
   port: 443
-  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
   alterId: 0
   cipher: auto
   tls: true
-  servername: ip1.589643.xyz
+  servername: ip1.9447609.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: dongtaiwang.com
+    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
     headers:
-      Host: ip1.589643.xyz
+      Host: ip1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -82,19 +68,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 1-0
   type: vmess
-  server: 104.21.238.114
+  server: 104.21.238.36
   port: 443
-  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
   alterId: 0
   cipher: auto
   tls: true
-  servername: ip1.589643.xyz
+  servername: ip1.9447609.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: dongtaiwang.com
+    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
     headers:
-      Host: ip1.589643.xyz
+      Host: ip1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -102,19 +88,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 2-0
   type: vmess
-  server: 104.21.238.113
+  server: 104.21.238.37
   port: 443
-  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
   alterId: 0
   cipher: auto
   tls: true
-  servername: ip1.589643.xyz
+  servername: ip1.9447609.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: dongtaiwang.com
+    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
     headers:
-      Host: ip1.589643.xyz
+      Host: ip1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -122,19 +108,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 3-0
   type: vmess
-  server: 104.21.238.112
+  server: 104.21.238.38
   port: 443
-  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
   alterId: 0
   cipher: auto
   tls: true
-  servername: ip1.589643.xyz
+  servername: ip1.9447609.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: dongtaiwang.com
+    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
     headers:
-      Host: ip1.589643.xyz
+      Host: ip1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -146,7 +132,6 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -160,7 +145,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -173,7 +157,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -186,7 +169,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -199,7 +181,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -212,7 +193,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -225,7 +205,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -238,7 +217,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -251,7 +229,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -264,7 +241,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -277,7 +253,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -290,7 +265,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -312,7 +286,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸 US-vless | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
