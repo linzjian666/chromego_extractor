@@ -53,19 +53,19 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.21.238.35
-  port: 443
-  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
+  server: 104.21.238.36
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
   alterId: 0
   cipher: auto
-  tls: true
-  servername: ip1.9447609.xyz
+  tls: false
+  servername: ''
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
+    path: github.com/Alvin9999
     headers:
-      Host: ip1.9447609.xyz
+      Host: ip3.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -73,19 +73,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 1-0
   type: vmess
-  server: 104.21.238.36
-  port: 443
-  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
+  server: 104.21.238.37
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
   alterId: 0
   cipher: auto
-  tls: true
-  servername: ip1.9447609.xyz
+  tls: false
+  servername: ''
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
+    path: github.com/Alvin9999
     headers:
-      Host: ip1.9447609.xyz
+      Host: ip3.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -93,19 +93,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 2-0
   type: vmess
-  server: 104.21.238.37
-  port: 443
-  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
+  server: 104.21.238.38
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
   alterId: 0
   cipher: auto
-  tls: true
-  servername: ip1.9447609.xyz
+  tls: false
+  servername: ''
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
+    path: github.com/Alvin9999
     headers:
-      Host: ip1.9447609.xyz
+      Host: ip3.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -113,19 +113,19 @@ proxies:
     host: []
 - name: 🏳 Unknown-vmess | 3-0
   type: vmess
-  server: 104.21.238.38
-  port: 443
-  uuid: 2b0ee439-844b-42fb-8a86-288b65dc20e1
+  server: 104.21.238.39
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
   alterId: 0
   cipher: auto
-  tls: true
-  servername: ip1.9447609.xyz
+  tls: false
+  servername: ''
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /2b0ee439-844b-42fb-8a86-288b65dc20e1
+    path: github.com/Alvin9999
     headers:
-      Host: ip1.9447609.xyz
+      Host: ip3.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
