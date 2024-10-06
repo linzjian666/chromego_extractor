@@ -13,20 +13,6 @@ global-client-fingerprint: chrome
 proxies:
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
-  server: 104.192.224.138
-  port: 28850
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇺🇸 US-Hysteria | 1-0
-  type: hysteria
   server: 166.1.221.169
   port: 11223
   ports: 11223
@@ -43,13 +29,6 @@ proxies:
   type: hysteria2
   server: 207.90.239.157
   port: 3400
-  password: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 US-Hysteria2 | 1-0
-  type: hysteria2
-  server: 64.110.25.12
-  port: 50942
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -140,9 +119,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -154,9 +131,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -167,9 +142,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -180,9 +153,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -193,9 +164,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -206,9 +175,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -219,9 +186,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -232,9 +197,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -245,9 +208,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -258,9 +219,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -271,9 +230,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -284,9 +241,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
@@ -306,9 +261,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
