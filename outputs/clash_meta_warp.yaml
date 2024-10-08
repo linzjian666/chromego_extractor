@@ -30,11 +30,22 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇷🇺 RU-hysteria | 7-1
+  type: hysteria
+  server: 46.29.166.206
+  port: 22222
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 166.1.221.169
-  port: 11223
-  ports: 11223
+  port: 55555
+  ports: 55555
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -47,7 +58,7 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 207.90.239.157
-  port: 3400
+  port: 11111
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -65,7 +76,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip4.9447609.xyz
+      Host: ip5.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -85,7 +96,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip4.9447609.xyz
+      Host: ip5.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -105,7 +116,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip4.9447609.xyz
+      Host: ip5.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -125,7 +136,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip4.9447609.xyz
+      Host: ip5.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -138,6 +149,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -150,6 +162,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -162,6 +175,7 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -174,6 +188,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -186,6 +201,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -198,6 +214,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -210,6 +227,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -222,6 +240,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -234,6 +253,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -246,6 +266,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -258,6 +279,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -270,6 +292,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -282,6 +305,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -294,6 +318,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
@@ -315,6 +340,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇷🇺 RU-hysteria | 7-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
