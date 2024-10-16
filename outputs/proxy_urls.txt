@@ -1,5 +1,6 @@
-hysteria://46.29.166.206:100/?protocol=udp&insecure=1&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇷🇺 RU-hysteria | 6-1
-hysteria://46.17.43.223:12311/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇷🇺 RU-Hysteria | 0-0
+vless://ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2@46.29.166.206:400?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.paypal.com&fp=chrome&pbk=bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI&sid=&type=tcp&serviceName=&host=&path=#🇷🇺 RU-vless | 6-1
+hysteria://62.210.8.63:2345/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
+hysteria://46.17.43.223:12311/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇷🇺 RU-Hysteria | 1-0
 hysteria2://dongtaiwang.com@185.22.152.93:33713/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 0-0
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAwLTAiLCAiYWRkIjogIjEwNC4yMS4yMzguMzUiLCAicG9ydCI6IDIwODYsICJpZCI6ICJlZTQyMGZkYS1lZmI3LTQ4YTgtOTI0OS04OTg3ZTM2ZWJkOWUiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICJnaXRodWIuY29tL0FsdmluOTk5OSIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAiYWxwbiI6ICIifQ==
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAxLTAiLCAiYWRkIjogIjEwNC4yMS4yMzguMzYiLCAicG9ydCI6IDIwODYsICJpZCI6ICJlZTQyMGZkYS1lZmI3LTQ4YTgtOTI0OS04OTg3ZTM2ZWJkOWUiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICJnaXRodWIuY29tL0FsdmluOTk5OSIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAiYWxwbiI6ICIifQ==
