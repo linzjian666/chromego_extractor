@@ -75,7 +75,7 @@ proxies:
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   type: hysteria2
   server: 185.22.152.93
-  port: 33713
+  port: 47382
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
