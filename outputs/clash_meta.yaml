@@ -28,8 +28,8 @@ proxies:
 - name: 🇷🇺 RU-Hysteria | 0-0
   type: hysteria
   server: 46.17.43.223
-  port: 39655
-  ports: 40000-50000
+  port: 64907
+  ports: 30000-40000
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -42,8 +42,8 @@ proxies:
 - name: 🇷🇺 RU-Hysteria | 1-0
   type: hysteria
   server: 46.17.43.223
-  port: 23142
-  ports: 23142
+  port: 12345
+  ports: 12345
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -74,7 +74,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip19.9447609.xyz
+      Host: ip20.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
