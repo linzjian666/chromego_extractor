@@ -93,7 +93,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip24.9447609.xyz
+      Host: ip25.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
