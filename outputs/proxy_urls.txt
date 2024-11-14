@@ -1,4 +1,4 @@
-vless://ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2@46.29.166.206:400?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.paypal.com&fp=chrome&pbk=bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI&sid=&type=tcp&serviceName=&host=&path=#🇷🇺 RU-vless | 6-1
+vless://ef6706c2-ac66-4c39-bf16-208effa86922@46.29.166.206:49887?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.paypal.com&fp=chrome&pbk=bBX2IBet-d-kWJ7sb_49zVaem3iTAw5jIwQL4JGDuEg&sid=&type=tcp&serviceName=&host=&path=#🇷🇺 RU-vless | 6-1
 hysteria://46.17.43.223:64907/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇷🇺 RU-Hysteria | 0-0
 hysteria://46.17.43.223:12345/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇷🇺 RU-Hysteria | 1-0
 hysteria2://dongtaiwang.com@185.22.152.93:47382/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 0-0
