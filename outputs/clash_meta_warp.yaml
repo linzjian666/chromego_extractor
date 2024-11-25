@@ -30,20 +30,18 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇷🇺 RU-vless | 6-1
-  type: vless
-  server: 46.29.166.206
-  port: 49887
-  uuid: ef6706c2-ac66-4c39-bf16-208effa86922
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bBX2IBet-d-kWJ7sb_49zVaem3iTAw5jIwQL4JGDuEg
-    short-id: ''
-  client-fingerprint: chrome
+- name: 🇺🇸 US-hysteria | 6-1
+  type: hysteria
+  server: 166.1.18.42
+  port: 37950
+  ports: 10000-20000
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇷🇺 RU-Hysteria | 0-0
   type: hysteria
   server: 46.17.43.223
@@ -74,8 +72,8 @@ proxies:
   - h3
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   type: hysteria2
-  server: 185.22.152.93
-  port: 47382
+  server: 46.17.41.189
+  port: 50717
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -93,7 +91,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e5.9447609.xyz
+      Host: e1-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -113,7 +111,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e6.9447609.xyz
+      Host: e2-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -133,7 +131,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e7.9447609.xyz
+      Host: e3-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -153,7 +151,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e8.9447609.xyz
+      Host: e4-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -166,7 +164,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -180,7 +178,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -194,7 +192,7 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -208,7 +206,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -222,7 +220,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -236,7 +234,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -250,7 +248,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -264,7 +262,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -278,7 +276,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -292,7 +290,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -306,7 +304,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -320,7 +318,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -334,7 +332,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -348,7 +346,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
@@ -371,7 +369,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-vless | 6-1
+  - 🇺🇸 US-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
