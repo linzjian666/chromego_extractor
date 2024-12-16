@@ -93,7 +93,7 @@ proxies:
   type: vmess
   server: 104.21.238.35
   port: 2086
-  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   alterId: 0
   cipher: auto
   tls: false
@@ -103,7 +103,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: x141.570241.xyz
+      Host: x157.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -113,7 +113,7 @@ proxies:
   type: vmess
   server: 104.21.238.36
   port: 2086
-  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   alterId: 0
   cipher: auto
   tls: false
@@ -123,7 +123,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y80.570241.xyz
+      Host: y97.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -133,7 +133,7 @@ proxies:
   type: vmess
   server: 104.21.238.37
   port: 2086
-  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   alterId: 0
   cipher: auto
   tls: false
@@ -143,7 +143,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z159.570241.xyz
+      Host: z177.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -153,7 +153,7 @@ proxies:
   type: vmess
   server: 104.21.238.38
   port: 2086
-  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
   alterId: 0
   cipher: auto
   tls: false
@@ -163,7 +163,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: a151.570241.xyz
+      Host: a169.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
