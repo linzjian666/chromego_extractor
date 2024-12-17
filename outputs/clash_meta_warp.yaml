@@ -89,11 +89,11 @@ proxies:
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🏳 Unknown-vmess | 0-0
+- name: 🇨🇳 TW-vmess | 0-0
   type: vmess
-  server: 104.21.238.35
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  server: 36.226.243.107
+  port: 2082
+  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
   alterId: 0
   cipher: auto
   tls: false
@@ -102,8 +102,7 @@ proxies:
   network: ws
   ws-opts:
     path: github.com/Alvin9999
-    headers:
-      Host: x177.164748.xyz
+    headers: {}
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -123,7 +122,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y118.164748.xyz
+      Host: y134.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -143,7 +142,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z200.164748.xyz
+      Host: z221.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -163,7 +162,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: a192.164748.xyz
+      Host: a211.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -181,7 +180,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -196,7 +195,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -211,7 +210,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -226,7 +225,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -241,7 +240,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -256,7 +255,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -271,7 +270,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -286,7 +285,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -301,7 +300,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -316,7 +315,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -331,7 +330,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -346,7 +345,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -361,7 +360,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -376,7 +375,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
@@ -400,7 +399,7 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇨🇳 TW-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
