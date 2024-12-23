@@ -73,7 +73,7 @@ proxies:
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 36.226.243.107
-  port: 33221
+  port: 33333
   uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
   alterId: 0
   cipher: auto
