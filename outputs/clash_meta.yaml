@@ -73,7 +73,7 @@ proxies:
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 220.136.144.137
-  port: 50001
+  port: 50002
   uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
   alterId: 0
   cipher: auto
