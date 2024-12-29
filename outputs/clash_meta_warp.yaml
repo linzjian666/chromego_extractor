@@ -91,7 +91,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
-  server: 36.226.252.19
+  server: 36.226.244.225
   port: 56870
   uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
   flow: xtls-rprx-vision
