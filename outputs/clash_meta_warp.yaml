@@ -91,9 +91,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
-  server: 36.226.244.225
-  port: 56870
-  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  server: 1.162.18.226
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
   flow: xtls-rprx-vision
   tls: true
   servername: www.yahoo.com
@@ -102,8 +102,8 @@ proxies:
   grpc-opts:
     grpc-service-name: /
   reality-opts:
-    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-    short-id: 239c3cef
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 proxy-groups:
 - name: 🚀 节点选择
   type: select
