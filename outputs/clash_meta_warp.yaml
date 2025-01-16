@@ -56,23 +56,9 @@ proxies:
   down: 55 Mbps
 - name: 🇷🇺 RU-Hysteria | 0-0
   type: hysteria
-  server: 46.17.43.223
-  port: 64907
+  server: 185.22.155.71
+  port: 15424
   ports: 30000-40000
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇷🇺 RU-Hysteria | 1-0
-  type: hysteria
-  server: 46.17.43.223
-  port: 12345
-  ports: 12345
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -114,7 +100,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
@@ -126,7 +111,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ⚖ 负载均衡
@@ -138,7 +122,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ☁ WARP前置节点
@@ -150,7 +133,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
@@ -162,7 +144,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
@@ -174,7 +155,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
@@ -186,7 +166,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
@@ -198,7 +177,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
@@ -210,7 +188,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
@@ -222,7 +199,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
@@ -234,7 +210,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
@@ -246,7 +221,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
@@ -258,7 +232,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
@@ -270,7 +243,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
@@ -291,7 +263,6 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🇷🇺 RU-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 rules:
