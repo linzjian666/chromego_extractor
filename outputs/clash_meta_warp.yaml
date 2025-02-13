@@ -44,8 +44,8 @@ proxies:
 - name: 🇷🇺 RU-hysteria | 7-1
   type: hysteria
   server: 185.22.155.71
-  port: 15424
-  ports: 30000-40000
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   obfs: dongtaiwang.com
   alpn:
@@ -57,7 +57,7 @@ proxies:
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   type: hysteria2
   server: 46.17.41.189
-  port: 50717
+  port: 51224
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
