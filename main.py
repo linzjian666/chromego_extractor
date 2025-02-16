@@ -40,10 +40,12 @@ def process_clash_meta(data, index):
             proxies = []
         for i, proxy in enumerate(proxies):
             if("network" in proxy and f"{proxy['network']}" == "ws"):
-                if(f"{proxy['server']}:{proxy['port']}-{proxy['ws-opts']['headers']['host']}-ws" not in servers_list):
+                headers = {k.lower(): v for k, v in proxy['ws-opts']['headers'].items()}
+                host = headers.get('host', '')
+                if(f"{proxy['server']}:{proxy['port']}-{host}-ws" not in servers_list):
                     location = get_physical_location(proxy['server'])
                     proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
-                    servers_list.append(f"{proxy['server']}:{proxy['port']}-{proxy['ws-opts']['headers']['host']}-ws")
+                    servers_list.append(f"{proxy['server']}:{proxy['port']}-{host}-ws")
                 else:
                     continue
             elif(f"{proxy['server']}:{proxy['port']}-{proxy['type']}" not in servers_list):
