@@ -43,10 +43,13 @@ def process_clash_meta(data, index):
                 try:
                     host = proxy['ws-opts']['headers']['host']
                 except KeyError:
+                    """
                     try:
                         host = proxy['ws-opts']['headers']['Host']
                     except KeyError:
-                        host = 'unknown_host'  
+                        host = 'unknown_host' 
+                    """
+                    host = 'unknown_host'
                 if(f"{proxy['server']}:{proxy['port']}-{host}-ws" not in servers_list):
                     location = get_physical_location(proxy['server'])
                     proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
