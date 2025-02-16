@@ -1,4 +1,8 @@
-https://raw.githubusercontent.com/Alvin9999/pac2/master/hysteria2/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/master/hysteria2/1/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/master/hysteria2/2/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/master/hysteria2/13/config.json
+https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria2/1/config.json
+https://gitlab.com/free9999/ipupdate/-/raw/master/hysteria2/config.json
+https://www.githubip.xyz/Alvin9999/pac2/master/hysteria2/config.json
+https://fastly.jsdelivr.net/gh/Alvin9999/pac2@latest/hysteria2/config.json
+https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria2/13/config.json
+https://gitlab.com/free9999/ipupdate/-/raw/master/hysteria2/2/config.json
+https://www.githubip.xyz/Alvin9999/pac2/master/hysteria2/2/config.json
+https://fastly.jsdelivr.net/gh/Alvin9999/pac2@latest/hysteria2/2/config.json
