@@ -44,10 +44,8 @@ proxies:
 - name: 🇷🇺 RU-hysteria | 7-1
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
   auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
   alpn:
   - h3
   sni: www.bing.com
