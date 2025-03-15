@@ -1,6 +1,6 @@
 name: Auto Extract
 
-on:1
+on:
     push:
         branches:
             - main
