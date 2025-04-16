@@ -83,14 +83,14 @@ proxies:
   server: 46.17.41.217
   port: 64816
   password: dongtaiwang.com
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇷🇺 RU-Hysteria2 | 1-0
   type: hysteria2
   server: 46.29.163.171
   port: 32555
   password: dongtaiwang.com
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
