@@ -45,26 +45,26 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇷🇺 RU-Hysteria2 | 0-0
-  type: hysteria2
-  server: 45.129.2.108
-  port: 50850
-  password: dongtaiwang.com
-  sni: www.bing.com
+- name: 🇳🇱 NL-Hysteria | 0-0
+  type: hysteria
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
   skip-cert-verify: true
-- name: 🇷🇺 RU-Hysteria2 | 1-0
+  alpn:
+  - h3
+- name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
-  server: 46.17.41.217
-  port: 30033
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇳🇱 NL-Hysteria2 | 2-0
-  type: hysteria2
-  server: 163.172.217.10
-  port: 10011
-  password: dongtaiwang.com
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
@@ -90,9 +90,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -103,9 +102,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -115,9 +113,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -127,9 +124,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -139,9 +135,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -151,9 +146,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
   type: select
@@ -163,9 +157,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -175,9 +168,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -187,9 +179,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -199,9 +190,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -211,9 +201,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -223,9 +212,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
   type: select
@@ -244,9 +232,8 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇺🇸 US-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🇷🇺 RU-Hysteria2 | 1-0
-  - 🇳🇱 NL-Hysteria2 | 2-0
+  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
