@@ -53,10 +53,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-hysteria | 8-1
+- name: 🇳🇱 NL-hysteria | 8-1
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -64,20 +65,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇳🇱 NL-Hysteria | 0-0
-  type: hysteria
-  server: 109.104.153.91
-  port: 37519
-  ports: 10000-20000
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 104.168.10.176
@@ -109,8 +96,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
@@ -121,8 +107,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ⚖ 负载均衡
@@ -133,8 +118,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: ☁ WARP前置节点
@@ -145,8 +129,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
@@ -157,8 +140,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
@@ -169,8 +151,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
@@ -181,8 +162,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
@@ -193,8 +173,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
@@ -205,8 +184,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
@@ -217,8 +195,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
@@ -229,8 +206,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
@@ -241,8 +217,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
@@ -253,8 +228,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
@@ -265,8 +239,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
@@ -286,8 +259,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
-  - 🇺🇸 US-hysteria | 8-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
 rules:
