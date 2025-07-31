@@ -3,7 +3,7 @@
 Author: Linzjian666
 Date: 2024-01-13 11:29:53
 LastEditors: Linzjian666
-LastEditTime: 2024-02-04 17:09:32
+LastEditTime: 2025-05-01 09:50:00
 """
 import yaml
 import json
@@ -41,15 +41,15 @@ def process_clash_meta(data, index):
         for i, proxy in enumerate(proxies):
             if("network" in proxy and f"{proxy['network']}" == "ws"):
                 host = proxy['ws-opts']['headers']['host']
-                """
-                try:
-                    host = proxy['ws-opts']['headers']['host']
-                except KeyError:
-                    try:
-                        host = proxy['ws-opts']['headers']['Host']
-                    except KeyError:
-                        host = 'unknown_host' 
-                """
+                
+                # try:
+                #    host = proxy['ws-opts']['headers']['host']
+                # except KeyError:
+                #     try:
+                #         host = proxy['ws-opts']['headers']['Host']
+                #     except KeyError:
+                #         host = '' 
+                
                 if(f"{proxy['server']}:{proxy['port']}-{host}-ws" not in servers_list):
                     location = get_physical_location(proxy['server'])
                     proxy['name'] = f"{location}-{proxy['type']} | {index}-{i+1}"
