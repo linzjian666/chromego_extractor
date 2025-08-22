@@ -1,5 +1,6 @@
-hysteria://208.87.243.151:38845/?protocol=udp&insecure=1&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 6-1
+hysteria://2604:6600:2004::18b:38845/?protocol=udp&insecure=1&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 6-1
 hysteria://108.181.24.77:37872/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 7-1
 hysteria://109.104.153.91:37519/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇳🇱 NL-hysteria | 8-1
+hysteria://208.87.243.151:38845/?protocol=udp&insecure=1&peer=www.bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 9-1
 hysteria2://dongtaiwang.com@104.168.10.176:35205/?sni=apple.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
 vless://ec302de4-6b3d-4f03-a228-3c6d303ed370@1.162.51.106:37898?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ&sid=e12d7fdb&type=tcp&serviceName=/&host=&path=#🇨🇳 TW-vless | 0-0
