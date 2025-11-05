@@ -62,7 +62,7 @@ proxies:
   down: 55 Mbps
 - name: 🇫🇷 FR-hysteria | 7-1
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -72,10 +72,22 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇳🇱 NL-Hysteria | 0-0
+- name: 🏳 Unknown-hysteria | 8-1
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 2001:bc8:32d7:158::2
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇱🇺 LU-Hysteria | 0-0
+  type: hysteria
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth-str: dongtaiwang.com
   up: 80
@@ -131,7 +143,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: ♻️ 自动选择
@@ -145,7 +158,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 📺 巴哈姆特
@@ -158,7 +172,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 📺 哔哩哔哩
@@ -171,7 +186,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 🌏 国内媒体
@@ -184,7 +200,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 🌍 国外媒体
@@ -197,7 +214,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 📲 电报信息
@@ -210,7 +228,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: Ⓜ️ 微软云盘
@@ -223,7 +242,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: Ⓜ️ 微软服务
@@ -236,7 +256,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 🍎 苹果服务
@@ -249,7 +270,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 📢 谷歌FCM
@@ -262,7 +284,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 🤖 OpenAI
@@ -275,7 +298,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 - name: 🎯 全球直连
@@ -297,7 +321,8 @@ proxy-groups:
   - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
-  - 🇳🇱 NL-Hysteria | 0-0
+  - 🏳 Unknown-hysteria | 8-1
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 1-0
 rules:
