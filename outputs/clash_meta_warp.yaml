@@ -30,11 +30,11 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-hysteria2 | 0-1
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  port: 20088
-  password: dongtaiwang.com
+- name: 🏳 Unknown-hysteria | 0-1
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -55,18 +55,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🏳 Unknown-hysteria2 | 3-1
-  type: hysteria2
-  server: 2001:bc8:32d7:302::17
-  port: 20088
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: 🏳 Unknown-hysteria | 6-1
   type: hysteria
   server: 2001:bc8:32d7:158::4
@@ -158,9 +146,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -173,9 +160,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -188,9 +174,8 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -203,9 +188,8 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -218,9 +202,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -233,9 +216,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -248,9 +230,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -263,9 +244,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -278,9 +258,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -293,9 +272,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -308,9 +286,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -323,9 +300,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -338,9 +314,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -353,9 +328,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
@@ -377,9 +351,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria2 | 0-1
+  - 🏳 Unknown-hysteria | 0-1
   - 🏳 Unknown-tuic | 2-1
-  - 🏳 Unknown-hysteria2 | 3-1
   - 🏳 Unknown-hysteria | 6-1
   - 🇫🇷 FR-hysteria | 7-1
   - 🏳 Unknown-hysteria | 8-1
