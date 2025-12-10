@@ -10,17 +10,21 @@ A python script to extract ChromeGo Proxies
 
 </div>
 
+### 未来更新计划
+
+[] 添加更多节点来源
+
 > 鸣谢
 > - 感谢[ChromeGo](https://github.com/bannedbook/fanqiang)项目
 > - 感谢[Alvin9999](https://github.com/Alvin9999/)大佬
 > - 感谢[chromegopacs](https://github.com/markbang/chromegopacs)提供的区域代码设置思路
-> - 本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助 [亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+> - 本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助：EdgeOne 提供长期有效的免费套餐，包含不限量的流量和请求，覆盖中国大陆节点，且无任何超额收费，感兴趣的朋友可以去 EdgeOne 官网获取 [亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
 ![EdgeOne Logo](https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png)
 
 
 ## 使用说明
 ### 订阅链接：
-> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2025-07-31 12:16:12`
+> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2025-12-10 00:44:52`
 
 - Clash Meta (不带WARP):
   
