@@ -116,5 +116,5 @@ This project is licensed under the MIT License. For detailed information, please
 
 <!--
 ## Statistics
-![Star History Chart](https://api.star-history.com/svg?repos=linzjian666/chromego_extractor&type=Date)
+![Star History Chart](https://star-history.dera.page/svg?repos=linzjian666/chromego_extractor&type=Date)
 -->

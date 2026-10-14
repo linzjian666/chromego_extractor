@@ -121,5 +121,5 @@ python main.py
 
 <!--
 ## 统计
-![Star History Chart](https://api.star-history.com/svg?repos=linzjian666/chromego_extractor&type=Date)
+![Star History Chart](https://star-history.dera.page/svg?repos=linzjian666/chromego_extractor&type=Date)
 -->
